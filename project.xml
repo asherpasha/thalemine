@@ -1,0 +1,17 @@
+<project type="bio">
+  <property name="target.model" value="genomic"/>
+  <property name="common.os.prefix" value="common"/>
+  <sources>
+
+
+
+  </sources>
+
+  <post-processing>
+
+
+
+  </post-processing>
+
+</project>
+
