@@ -66,7 +66,7 @@ webappConfig {
 cargo {
 
     // change this to match your Tomcat major version (keep the x)
-    containerId = 'tomcat8x'
+    containerId = 'tomcat9x'
     int remotePort = 8080
     if (props.getProperty("webapp.port") != null) {
         remotePort = props.getProperty("webapp.port").toInteger()

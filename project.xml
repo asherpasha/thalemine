@@ -1,16 +1,45 @@
 <project type="bio">
   <property name="target.model" value="genomic"/>
   <property name="common.os.prefix" value="common"/>
+  <property name="intermine.properties.file" value="thalemine.properties"/>
+
   <sources>
+<!--
+    <source name="ncbi-gene" type="ncbi-gene">
+      <property name="src.data.dir" location="/storage/thalemineData/ncbi-genomes-2019-04-19" />
+      <property name="organisms" value="3702" />
+    </source>
+-->
+    <source name="ncbi-fasta" type="fasta">
+      <property name="fasta.loaderClassName" value="org.intermine.bio.dataconversion.NCBIFastaLoaderTask"/>
+      <property name="fasta.taxonId" value="3702"/>
+      <property name="fasta.dataSetTitle" value="Arabidopsis Thaliana"/>
+      <property name="fasta.dataSourceName" value="NCBI"/>
+      <property name="fasta.className" value="org.intermine.model.bio.Chromosome"/>
+      <property name="fasta.classAttribute" value="primaryIdentifier"/>
+      <property name="src.data.dir" location="/storage/thalemineData/genome/fasta"/>
+      <property name="fasta.includes" value="*.fna"/>
+    </source>
 
+    <source name="ncbi-gff" type="ncbi-gff">
+      <property name="gff3.taxonId" value="3702"/>
+      <property name="gff3.seqClsName" value="Chromosome"/>
+      <property name="gff3.dataSourceName" value="NCBI"/>
+      <property name="gff3.dataSetTitle" value="Genome Anotation"/>
+      <property name="src.data.dir" location="/storage/thalemineData/genome/gff"/>
+    </source>
 
-
+    <source name="entrez-organism" type="entrez-organism">
+      <property name="src.data.file" location="organisms.xml"/>
+    </source>
   </sources>
 
   <post-processing>
-
-
-
+    <post-process name="do-sources" />
+    <post-process name="create-references" />
+    <post-process name="transfer-sequences" dump="true"/>
+    <post-process name="summarise-objectstore"/>
+    <post-process name="create-search-index"/>
   </post-processing>
 
 </project>
