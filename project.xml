@@ -10,8 +10,7 @@
       <property name="organisms" value="3702" />
     </source>
 -->
-    <source name="ncbi-fasta" type="fasta">
-      <property name="fasta.loaderClassName" value="org.intermine.bio.dataconversion.NCBIFastaLoaderTask"/>
+    <source name="bar-ncbi-fasta" type="fasta">
       <property name="fasta.taxonId" value="3702"/>
       <property name="fasta.dataSetTitle" value="Arabidopsis Thaliana"/>
       <property name="fasta.dataSourceName" value="NCBI"/>
