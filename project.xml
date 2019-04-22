@@ -10,14 +10,16 @@
       <property name="organisms" value="3702" />
     </source>
 -->
-    <source name="bar-ncbi-fasta" type="fasta">
-      <property name="fasta.taxonId" value="3702"/>
-      <property name="fasta.dataSetTitle" value="Arabidopsis Thaliana"/>
-      <property name="fasta.dataSourceName" value="NCBI"/>
-      <property name="fasta.className" value="org.intermine.model.bio.Chromosome"/>
-      <property name="fasta.classAttribute" value="primaryIdentifier"/>
+    <source name="bar-ncbi-fasta" type="bar-ncbi-fasta">
+      <property name="fasta.loaderClassName" value="org.intermine.bio.dataconversion.BarNcbiFastaLoaderTask"/> 
+      <property name="bar-ncbi-fasta.sequenceType" value="dna"/>
+      <property name="bar-ncbi-fasta.taxonId" value="3702"/>
+      <property name="bar-ncbi-fasta.dataSetTitle" value="Arabidopsis Thaliana"/>
+      <property name="bar-ncbi-fasta.dataSourceName" value="NCBI"/>
+      <property name="bar-ncbi-fasta.className" value="org.intermine.model.bio.Chromosome"/>
+      <property name="bar-ncbi-fasta.classAttribute" value="primaryIdentifier"/>
       <property name="src.data.dir" location="/storage/thalemineData/genome/fasta"/>
-      <property name="fasta.includes" value="*.fna"/>
+      <property name="bar-ncbi-fasta.includes" value="*.fna"/>
     </source>
 
     <source name="ncbi-gff" type="ncbi-gff">
