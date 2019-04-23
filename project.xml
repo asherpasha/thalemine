@@ -22,8 +22,9 @@
       <property name="bar-ncbi-fasta.includes" value="*.fna"/>
     </source>
 
-    <source name="ncbi-gff" type="ncbi-gff">
+    <source name="bar-ncbi-gff" type="bar-ncbi-gff">
       <property name="gff3.taxonId" value="3702"/>
+      <property name="gff3.seqDataSourceName" value="NCBI" />
       <property name="gff3.seqClsName" value="Chromosome"/>
       <property name="gff3.dataSourceName" value="NCBI"/>
       <property name="gff3.dataSetTitle" value="Genome Anotation"/>
