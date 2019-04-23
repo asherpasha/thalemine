@@ -4,8 +4,8 @@
     <icon-image>model/images/genomics.gif</icon-image>
     <large-image>model/images/genomics.gif</large-image>
     <intro-text>
-      The gene structure and other genome annotation in MalariaMine are provided by
-      a variety of curated source databases.  In most cases MalariaMine includes
+      The gene structure and other genome annotation in ThaleMine are provided by
+      a variety of curated source databases.  In most cases ThaleMine includes
       all genome features that have chromosomal locations.
     </intro-text>
     <tile-name>model/genomics.jsp</tile-name>
