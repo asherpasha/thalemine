@@ -22,11 +22,11 @@
       <property name="bar-ncbi-fasta.includes" value="*.fna"/>
     </source>
 
-    <source name="bar-ncbi-gff" type="bar-ncbi-gff">
+    <source name="bar-tair-gff" type="bar-tair-gff">
       <property name="gff3.taxonId" value="3702"/>
-      <property name="gff3.seqDataSourceName" value="NCBI" />
+      <property name="gff3.seqDataSourceName" value="TAIR" />
       <property name="gff3.seqClsName" value="Chromosome"/>
-      <property name="gff3.dataSourceName" value="NCBI"/>
+      <property name="gff3.dataSourceName" value="TAIR"/>
       <property name="gff3.dataSetTitle" value="Genome Anotation"/>
       <property name="src.data.dir" location="/storage/thalemineData/genome/gff"/>
     </source>
