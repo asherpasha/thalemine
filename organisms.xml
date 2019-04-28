@@ -1,0 +1,10 @@
+<items>
+<item id="-1_1" class="Organism">
+<attribute name="commonName" value="thale cress"/>
+<attribute name="genus" value="Arabidopsis"/>
+<attribute name="name" value="Arabidopsis thaliana"/>
+<attribute name="shortName" value="A. thaliana"/>
+<attribute name="species" value="thaliana"/>
+<attribute name="taxonId" value="3702"/>
+</item>
+</items>
