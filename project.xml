@@ -13,7 +13,7 @@
 	    <property name="bar-ncbi-fasta.dataSourceName" value="NCBI"/>
 	    <property name="bar-ncbi-fasta.className" value="org.intermine.model.bio.Chromosome"/>
 	    <property name="bar-ncbi-fasta.classAttribute" value="primaryIdentifier"/>
-	    <property name="src.data.dir" location="/storage/thalemineData/genome/fasta"/>
+	    <property name="src.data.dir" location="/home/intermine/thalemineData/genome/fasta"/>
 	    <property name="bar-ncbi-fasta.includes" value="*.fna"/>
 	</source>
 
@@ -24,7 +24,7 @@
 	    <property name="gff3.seqClsName" value="Chromosome"/>
 	    <property name="gff3.dataSourceName" value="TAIR"/>
 	    <property name="gff3.dataSetTitle" value="Genome Anotation"/>
-	    <property name="src.data.dir" location="/storage/thalemineData/genome/gff"/>
+	    <property name="src.data.dir" location="/home/intermine/thalemineData/genome/gff"/>
 	</source>
 
 	<!-- Organism information from NCBI -->

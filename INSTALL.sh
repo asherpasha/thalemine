@@ -5,15 +5,15 @@
 # Date: April 2019
 
 # Set version number. This is the thalemine.properties.20190419 file
-export VER=20190419
-export GRADLE_OPTS="-server -Dorg.gradle.daemon=false -Xms1g -Xmx2g -XX:+UseParallelGC -XX:SoftRefLRUPolicyMSPerMB=1 -XX:MaxHeapFreeRatio=99"
+export VER=20190509
+export GRADLE_OPTS="-server -Dorg.gradle.daemon=false -Xms8g -Xmx16g -XX:+UseParallelGC -XX:SoftRefLRUPolicyMSPerMB=1 -XX:MaxHeapFreeRatio=99"
 
 # Clean
-./gradlew clean
+./gradlew clean -Dor.gradle.project.release=$VER
 
 # BuildDB
 ./gradlew buildDB -Dorg.gradle.project.release=$VER
-hikari
+
 # Load DATA
 ./gradlew integrate -Psource=bar-ncbi-fasta -Dorg.gradle.project.release=$VER
 ./gradlew integrate -Psource=bar-tair-gff -Dorg.gradle.project.release=$VER
@@ -28,6 +28,6 @@ hikari
 ./gradlew postProcess -Dorg.gradle.project.release=$VER
 
 # Might have to build user database
-# ./gradlew buildUserDB
+./gradlew buildUserDB -Dorg.gradle.project.release=$VER
 ./gradlew cargoRedeployRemote -Dorg.gradle.project.release=$VER
 

@@ -43,10 +43,9 @@
             <td>TAIR10 Genome assembly (5 chromosomes plus chloroplast and mitochondrial assemblies)</td>
             <td>
                 <a href="ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/735/GCF_000001735.4_TAIR10.1/GCF_000001735.4_TAIR10.1_genomic.fna.gz"
-                   target="_blank" class="extlink">NCBI</a>- Release TAIR10 (2001/08/13	)
+                   target="_blank" class="extlink">NCBI</a>- Release TAIR10 (2019/02/14)
             </td>
-            <td>Arabidopsis Genome Initiative - <a href="http://www.ncbi.nlm.nih.gov/pubmed/11130711" target="_blank"
-                                                   class="extlink">PubMed: 11130711</a>
+            <td>Arabidopsis Genome Initiative - <a href="http://www.ncbi.nlm.nih.gov/pubmed/11130711" target="_blank" class="extlink">PubMed: 11130711</a>
         </tr>
 
         <%-- GFF3 data --%>
@@ -56,7 +55,7 @@
                 <a href="https://www.arabidopsis.org/download_files/Genes/Araport11_genome_release/Araport11_GFF3_genes_transposons.201606.gff.gz"
                    target="_blank" class="extlink">TAIR</a>- Release Araport11 (2016/06/17)
             </td>
-            <td><a href="http://dx.doi.org/10.1101/047308" target="_blank" class="extlink">Cheng et al., 2016</a></td>
+            <td>Cheng et al., 2016 - <a href="http://dx.doi.org/10.1111/tpj.13415" target="_blank" class="extlink">PubMed: 27862469</a></td>
         </tr>
 
         <%--
