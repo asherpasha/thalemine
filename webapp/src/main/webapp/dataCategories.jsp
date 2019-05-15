@@ -45,7 +45,8 @@
                 <a href="ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/735/GCF_000001735.4_TAIR10.1/GCF_000001735.4_TAIR10.1_genomic.fna.gz"
                    target="_blank" class="extlink">NCBI</a>- Release TAIR10 (2019/02/14)
             </td>
-            <td>Arabidopsis Genome Initiative - <a href="http://www.ncbi.nlm.nih.gov/pubmed/11130711" target="_blank" class="extlink">PubMed: 11130711</a>
+            <td>Arabidopsis Genome Initiative - <a href="http://www.ncbi.nlm.nih.gov/pubmed/11130711" target="_blank"
+                                                   class="extlink">PubMed: 11130711</a>
         </tr>
 
         <%-- GFF3 data --%>
@@ -55,16 +56,32 @@
                 <a href="https://www.arabidopsis.org/download_files/Genes/Araport11_genome_release/Araport11_GFF3_genes_transposons.201606.gff.gz"
                    target="_blank" class="extlink">TAIR</a>- Release Araport11 (2016/06/17)
             </td>
-            <td>Cheng et al., 2016 - <a href="http://dx.doi.org/10.1111/tpj.13415" target="_blank" class="extlink">PubMed: 27862469</a></td>
+            <td>Cheng et al., 2016 - <a href="http://dx.doi.org/10.1111/tpj.13415" target="_blank" class="extlink">PubMed:
+                27862469</a></td>
         </tr>
 
-        <%--
         <tr>
-          <td rowspan="2" class="leftcol"><h2><p>Proteins</p></h2></td>
-          <td>Proteins from UniProt (trEMBL and SwissProt)</td>
-          <td><a href="http://www.ebi.uniprot.org/index.shtml" target="_blank" class="extlink">UniProt</a>- Release 2015_08</td>
-          <td>UniProt Consortium - <a href="http://www.ncbi.nlm.nih.gov/pubmed/17142230" target="_blank" class="extlink">PubMed: 17142230</a></td>
+            <td rowspan="2" class="leftcol">
+                <h2><p>Proteins</p></h2>
+            </td>
+            <td>Swiss-Prot: High-quality, manually annotated, non-redundant protein sequence database.</td>
+            <td>
+                <a href="http://www.uniprot.org/uniprot/?format=xml&query=taxonomy%3A3702+AND+reviewed%3Ayes&compress=yes"
+                   target="_blank" class="extlink">Swiss-Prot</a>- Release 2019_04
+            </td>
+            <td>UniProt Consortium - <a href="http://www.ncbi.nlm.nih.gov/pubmed/17142230" target="_blank"
+                                        class="extlink">PubMed: 17142230</a></td>
         </tr>
+        <tr>
+            <td>TrEMBL: Computationally analysed records, enriched with automatic annotation</td>
+            <td>
+                <a href="http://www.uniprot.org/uniprot/?format=xml&query=taxonomy%3A3702+AND+reviewed%3Ano&compress=yes"
+                   target="_blank" class="extlink">TrEMBL</a>- Release 2019_04
+            </td>
+            <td>UniProt Consortium - <a href="http://www.ncbi.nlm.nih.gov/pubmed/17142230" target="_blank"
+                                        class="extlink">PubMed: 17142230</a></td>
+        </tr>
+        <%--
         <tr>
           <td>Protein family and domain assignments to proteins</td>
           <td><a href="http://www.ebi.ac.uk/interpro" target="_blank" class="extlink">InterPro</a>(v53.0)</td>
@@ -130,14 +147,20 @@
           <td><a href="http://www.weigelworld.org/resources/microarray/AtGenExpress/" target="_blank" class="extlink">AtGenExpress</a>- Weigel World</td>
           <td>Goda et al., 2008 - <a href="http://www.ncbi.nlm.nih.gov/pubmed/18419781" target="_blank" class="extlink">PubMed: 18419781</a></td>
         </tr>
-
+        --%>
         <tr>
-          <td class="leftcol"><h2><p>Publications</p></h2></td>
-          <td>Relevant publications are identified by searching databases such as PubMed (full-text is read, relevant information extracted and added to the entry)</td>
-          <td><a href="http://www.uniprot.org/help/publications" target="_blank" class="extlink">Publications</a>from UniProt (Release 2015_08) and NCBI gene2pubmed (08/14/15)</td>
-          <td>Magrane et al., 2011 - <a href="http://www.ncbi.nlm.nih.gov/pubmed/21447597" target="_blank" class="extlink">PubMed: 21447597</a></td>
+            <td class="leftcol">
+                <h2><p>Publications</p></h2>
+            </td>
+            <td>Curated associations between publications and genes	from UniProt</td>
+            <td><a href="http://www.uniprot.org/help/publications" target="_blank" class="extlink">UniProt</a>- Release
+                2019_04
+            </td>
+            <td>UniProt Consortium - <a href="http://www.ncbi.nlm.nih.gov/pubmed/17142230" target="_blank"
+                                        class="extlink">PubMed: 17142230</a></td>
+            <%-- <td>Magrane et al., 2011 - <a href="http://www.ncbi.nlm.nih.gov/pubmed/21447597" target="_blank" class="extlink">PubMed: 21447597</a></td> --%>
         </tr>
-
+        <%--
         <tr>
           <td class="leftcol"><h2><p>Pathways</p></h2></td>
           <td>KEGG pathways - Wiring diagrams of molecular interactions, reactions, and relations</td>
