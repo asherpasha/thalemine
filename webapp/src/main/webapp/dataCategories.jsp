@@ -61,7 +61,7 @@
         </tr>
 
         <tr>
-            <td rowspan="2" class="leftcol">
+            <td rowspan="3" class="leftcol">
                 <h2><p>Proteins</p></h2>
             </td>
             <td>Swiss-Prot: High-quality, manually annotated, non-redundant protein sequence database.</td>
@@ -81,13 +81,16 @@
             <td>UniProt Consortium - <a href="http://www.ncbi.nlm.nih.gov/pubmed/17142230" target="_blank"
                                         class="extlink">PubMed: 17142230</a></td>
         </tr>
-        <%--
+
         <tr>
-          <td>Protein family and domain assignments to proteins</td>
-          <td><a href="http://www.ebi.ac.uk/interpro" target="_blank" class="extlink">InterPro</a>(v53.0)</td>
-          <td>Mulder et al - <a href="http://www.ncbi.nlm.nih.gov/pubmed/17202162" target="_blank" class="extlink">PubMed: 17202162</a></td>
+            <td>InterPro: Protein family and domain assignments to proteins</td>
+            <td><a href="ftp://ftp.ebi.ac.uk/pub/databases/interpro/interpro.xml.gz" target="_blank" class="extlink">InterPro</a>(v74.0)
+            </td>
+            <td>Mulder et al - <a href="http://www.ncbi.nlm.nih.gov/pubmed/17202162" target="_blank" class="extlink">PubMed:
+                17202162</a></td>
         </tr>
 
+        <%--
         <tr>
           <td rowspan="2" class="leftcol"><h2><p>Homology</p></h2></td>
           <td>Orthologue and paralogue relationships based on the inferred speciation and gene duplication events in the phylogenetic tree.</td>
@@ -152,7 +155,7 @@
             <td class="leftcol">
                 <h2><p>Publications</p></h2>
             </td>
-            <td>Curated associations between publications and genes	from UniProt</td>
+            <td>Curated associations between publications and genes from UniProt</td>
             <td><a href="http://www.uniprot.org/help/publications" target="_blank" class="extlink">UniProt</a>- Release
                 2019_04
             </td>

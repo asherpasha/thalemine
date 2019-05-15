@@ -6,7 +6,7 @@
 
 # Set version number. This is the thalemine.properties.20190419 file
 export VER=20190509
-export GRADLE_OPTS="-server -Dorg.gradle.daemon=false -Xms8g -Xmx16g -XX:+UseParallelGC -XX:SoftRefLRUPolicyMSPerMB=1 -XX:MaxHeapFreeRatio=99"
+export GRADLE_OPTS="-server -Dorg.gradle.daemon=false -Xms512m -Xmx1g -XX:+UseParallelGC -XX:SoftRefLRUPolicyMSPerMB=1 -XX:MaxHeapFreeRatio=99"
 
 # Clean
 ./gradlew clean -Dor.gradle.project.release=$VER
@@ -22,8 +22,8 @@ export GRADLE_OPTS="-server -Dorg.gradle.daemon=false -Xms8g -Xmx16g -XX:+UsePar
 ./gradlew integrate -Psource=uniprot -Dorg.gradle.project.release=$VER
 ./gradlew integrate -Psource=uniprot-fasta -Dorg.gradle.project.release=$VER
 ./gradlew integrate -Psource=uniprot-keywords -Dorg.gradle.project.release=$VER
-
-# Comment out the following during testing
+./gradlew integrate -Psource=interpro -Dorg.gradle.project.release=$VER
+./gradlew integrate -Psource=protein2ipr -Dorg.gradle.project.release=$VER
 ./gradlew integrate -Psource=update-publications -Dorg.gradle.project.release=$VER
 
 # Run all post processes

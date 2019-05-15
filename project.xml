@@ -19,7 +19,7 @@
             <property name="bar-ncbi-fasta.dataSourceName" value="NCBI"/>
             <property name="bar-ncbi-fasta.className" value="org.intermine.model.bio.Chromosome"/>
             <property name="bar-ncbi-fasta.classAttribute" value="primaryIdentifier"/>
-            <property name="src.data.dir" location="/home/intermine/thalemineData/genome/fasta"/>
+            <property name="src.data.dir" location="/DATA/thalemineData/genome/fasta"/>
             <property name="bar-ncbi-fasta.includes" value="*.fna"/>
         </source>
 
@@ -30,7 +30,7 @@
             <property name="gff3.seqClsName" value="Chromosome"/>
             <property name="gff3.dataSourceName" value="TAIR"/>
             <property name="gff3.dataSetTitle" value="Genome Anotation"/>
-            <property name="src.data.dir" location="/home/intermine/thalemineData/genome/gff"/>
+            <property name="src.data.dir" location="/DATA/thalemineData/genome/gff"/>
         </source>
 
         <!-- Organism information from NCBI -->
@@ -45,7 +45,7 @@
         -->
         <source name="uniprot" type="uniprot" >
             <property name="uniprot.organisms" value="3702"/>
-            <property name="src.data.dir" location="/home/intermine/thalemineData/uniprot"/>
+            <property name="src.data.dir" location="/DATA/thalemineData/uniprot"/>
             <property name="creatego" value="true"/>
             <property name="creategenes" value="true"/>
             <property name="allowduplicates" value="false"/>
@@ -63,7 +63,7 @@
             <property name="fasta.classAttribute" value="primaryAccession"/>
             <property name="fasta.dataSetTitle" value="UniProt data set"/>
             <property name="fasta.dataSourceName" value="UniProt"/>
-            <property name="src.data.dir" location="/home/intermine/thalemineData/uniprot"/>
+            <property name="src.data.dir" location="/DATA/thalemineData/uniprot"/>
             <property name="fasta.includes" value="uniprot_sprot_varsplic.fasta"/>
             <property name="fasta.sequenceType" value="protein" />
             <property name="fasta.loaderClassName" value="org.intermine.bio.dataconversion.UniProtFastaLoaderTask"/>
@@ -74,11 +74,33 @@
         File name: keywlist.xml
         -->
         <source name="uniprot-keywords" type="uniprot-keywords">
-            <property name="src.data.dir" location="/home/intermine/thalemineData/uniprot"/>
+            <property name="src.data.dir" location="/DATA/thalemineData/uniprot"/>
             <property name="src.data.dir.includes" value="keywlist.xml"/>
         </source>
 
-        <!-- This will updated Publication added by UniProt souces -->
+        <!--
+        InterPro data: ftp://ftp.ebi.ac.uk/pub/databases/interpro/interpro.xml.gz
+        Note: InterPro must be run after UniProt.
+        -->
+        <source name="interpro" type="interpro">
+		<property name="src.data.dir" location="/DATA/thalemineData/interpro"/>
+		<property name="src.data.dir.includes" value="interpro.xml"/>
+        </source>
+
+        <!--
+        Files: ftp://ftp.ebi.ac.uk/pub/databases/interpro/protein2ipr.dat.gz
+        ftp://ftp.ebi.ac.uk/pub/databases/interpro/match_complete.dat.gz
+        -->
+        <source name="protein2ipr" type="protein2ipr">
+            <property name="src.data.dir" location="/DATA/thalemineData/interpro"/>
+            <property name="src.data.dir.includes" value="protein2ipr.dat"/>
+            <property name="protein2ipr.organisms" value="3702"/>
+            <property name="osAlias" value="os.production"/>
+        </source>
+
+        <!--
+        This will updated Publication added by UniProt souces
+        -->
         <source name="update-publications" type="update-publications" dump="true">
             <property name="src.data.file" location="publications.xml"/>
         </source>
