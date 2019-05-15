@@ -9,17 +9,22 @@ export VER=20190509
 export GRADLE_OPTS="-server -Dorg.gradle.daemon=false -Xms8g -Xmx16g -XX:+UseParallelGC -XX:SoftRefLRUPolicyMSPerMB=1 -XX:MaxHeapFreeRatio=99"
 
 # Clean
-./gradlew clean 
+./gradlew clean -Dor.gradle.project.release=$VER
 
 # BuildDB
 ./gradlew buildDB -Dorg.gradle.project.release=$VER
 
 # Load DATA
+./gradlew integrate -Psource=so -Dorg.gradle.project.release=$VER
 ./gradlew integrate -Psource=bar-ncbi-fasta -Dorg.gradle.project.release=$VER
 ./gradlew integrate -Psource=bar-tair-gff -Dorg.gradle.project.release=$VER
-
-# Restart Postgres
 ./gradlew integrate -Psource=entrez-organism -Dorg.gradle.project.release=$VER
+./gradlew integrate -Psource=uniprot -Dorg.gradle.project.release=$VER
+./gradlew integrate -Psource=uniprot-fasta -Dorg.gradle.project.release=$VER
+./gradlew integrate -Psource=uniprot-keywords -Dorg.gradle.project.release=$VER
+
+# Comment out the following during testing
+./gradlew integrate -Psource=update-publications -Dorg.gradle.project.release=$VER
 
 # Run all post processes
 # Individual post processes can be run as
@@ -30,4 +35,5 @@ export GRADLE_OPTS="-server -Dorg.gradle.daemon=false -Xms8g -Xmx16g -XX:+UsePar
 # Might have to build user database
 #./gradlew buildUserDB -Dorg.gradle.project.release=$VER
 ./gradlew cargoRedeployRemote -Dorg.gradle.project.release=$VER
+
 
