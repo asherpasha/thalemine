@@ -84,7 +84,7 @@
 
         <tr>
             <td>InterPro: Protein family and domain assignments to proteins</td>
-            <td><a href="ftp://ftp.ebi.ac.uk/pub/databases/interpro/interpro.xml.gz" target="_blank" class="extlink">InterPro</a>(v74.0)
+            <td><a href="ftp://ftp.ebi.ac.uk/pub/databases/interpro/interpro.xml.gz" target="_blank" class="extlink">InterPro</a>- Release v74.0
             </td>
             <td>Mulder et al - <a href="http://www.ncbi.nlm.nih.gov/pubmed/17202162" target="_blank" class="extlink">PubMed:
                 17202162</a></td>
@@ -92,9 +92,9 @@
 
         <%--
         <tr>
-          <td rowspan="2" class="leftcol"><h2><p>Homology</p></h2></td>
+          <td rowspan="1" class="leftcol"><h2><p>Homology</p></h2></td>
           <td>Orthologue and paralogue relationships based on the inferred speciation and gene duplication events in the phylogenetic tree.</td>
-          <td><a href="http://www.pantherdb.org" target="_blank" class="extlink">Panther</a>- Release 10.0, 15 May 2015</td>
+          <td><a href="ftp://ftp.pantherdb.org/ortholog/current_release/RefGenomeOrthologs.tar.gz" target="_blank" class="extlink">Panther</a>- Release 14.1</td>
           <td>Mi et al - <a href="http://www.ncbi.nlm.nih.gov/pubmed/23193289 " target="_blank" class="extlink">PubMed: 23193289</a></td>
         </tr>
         <tr>

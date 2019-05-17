@@ -32,11 +32,19 @@
             <property name="gff3.dataSetTitle" value="Genome Anotation"/>
             <property name="src.data.dir" location="/DATA/thalemineData/genome/gff"/>
         </source>
+	
+	<!-- http://purl.obolibrary.org/obo/go/go-basic.obo -->
+	<source name="go" type="go">
+		<property name="src.data.file" location="/DATA/thalemineData/go/go-basic.obo" />
+	</source>
 
-        <!-- Organism information from NCBI -->
-        <source name="entrez-organism" type="entrez-organism">
-            <property name="src.data.file" location="organisms.xml"/>
-        </source>
+	<!-- http://current.geneontology.org/annotations/tair.gaf.gz -->
+	<!-- Failed!
+	<source name="go-annotation" type="go-annotation">
+		<property name="src.data.dir" location="/DATA/thalemineData/go-annotation" />
+		<property name="src.data.includes" value="tair.gaf" />
+	</source>
+	-->
 
         <!--
         UniProt SwissProt http://www.uniprot.org/uniprot/?format=xml&query=taxonomy%3A3702+AND+reviewed%3Ayes&compress=yes
@@ -78,6 +86,13 @@
             <property name="src.data.dir.includes" value="keywlist.xml"/>
         </source>
 
+	<!-- File: RefGenomeOrthologs.txt: ftp://ftp.pantherdb.org/ortholog/current_release/RefGenomeOrthologs.tar.gz -->
+        <source name="panther" type="panther" dump="true">
+            <property name="src.data.dir" location="/DATA/thalemineData/panther"/>
+	    <property name="panther.organisms" value="3702"/>
+	    <property name="panther.homologues" value="4932 9606"/>
+	</source> 
+
         <!--
         InterPro data: ftp://ftp.ebi.ac.uk/pub/databases/interpro/interpro.xml.gz
         Note: InterPro must be run after UniProt.
@@ -86,8 +101,8 @@
 		<property name="src.data.dir" location="/DATA/thalemineData/interpro"/>
 		<property name="src.data.dir.includes" value="interpro.xml"/>
         </source>
-
-        <!--
+	
+	<!--
         Files: ftp://ftp.ebi.ac.uk/pub/databases/interpro/protein2ipr.dat.gz
         ftp://ftp.ebi.ac.uk/pub/databases/interpro/match_complete.dat.gz
         -->
@@ -98,11 +113,17 @@
             <property name="osAlias" value="os.production"/>
         </source>
 
+
         <!--
         This will updated Publication added by UniProt souces
         -->
         <source name="update-publications" type="update-publications" dump="true">
             <property name="src.data.file" location="publications.xml"/>
+        </source>
+	
+	<!-- Organism information from NCBI -->
+        <source name="entrez-organism" type="entrez-organism">
+            <property name="src.data.file" location="organisms.xml"/>
         </source>
 
     </sources>
@@ -112,6 +133,7 @@
         <post-process name="create-references"/>
         <post-process name="make-spanning-locations"/>
         <post-process name="create-chromosome-locations-and-lengths"/>
+	<post-process name="create-intron-features"/>
         <post-process name="create-intergenic-region-features"/>
         <post-process name="transfer-sequences"/>
         <post-process name="do-sources"/>
