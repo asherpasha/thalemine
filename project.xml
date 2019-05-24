@@ -9,6 +9,20 @@
             <property name="src.data.file" location="so.obo" />
             <property name="licence" value="https://creativecommons.org/licenses/by/4.0/"/>
         </source>
+	
+	<!-- 
+	This must be loaded before GFF data
+	http://purl.obolibrary.org/obo/go/go-basic.obo -->
+	<source name="go" type="go">
+		<property name="src.data.file" location="/DATA/thalemineData/go/go-basic.obo" />
+	</source>
+
+	<!-- http://current.geneontology.org/annotations/tair.gaf.gz -->
+	<source name="go-annotation" type="go-annotation">
+		<property name="src.data.dir" location="/DATA/thalemineData/go-annotation" />
+		<property name="src.data.includes" value="tair.gaf" />
+		<property name="ontologyPrefix" value="GO"/>
+	</source>
 
         <!-- A. thaliana FASTA sequence from NCBI -->
         <source name="bar-ncbi-fasta" type="bar-ncbi-fasta">
@@ -32,21 +46,6 @@
             <property name="gff3.dataSetTitle" value="Genome Anotation"/>
             <property name="src.data.dir" location="/DATA/thalemineData/genome/gff"/>
         </source>
-	
-	<!-- http://purl.obolibrary.org/obo/go/go-basic.obo -->
-	<!--
-	<source name="go" type="go">
-		<property name="src.data.file" location="/DATA/thalemineData/go/go-basic.obo" />
-		</source>
-	-->
-
-		<!-- http://current.geneontology.org/annotations/tair.gaf.gz -->
-		<!--
-	<source name="go-annotation" type="go-annotation">
-		<property name="src.data.dir" location="/DATA/thalemineData/go-annotation" />
-		<property name="src.data.includes" value="tair.gaf" />
-			</source>
-		-->
 
         <!--
         UniProt SwissProt http://www.uniprot.org/uniprot/?format=xml&query=taxonomy%3A3702+AND+reviewed%3Ayes&compress=yes
