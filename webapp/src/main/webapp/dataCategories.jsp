@@ -102,19 +102,21 @@
           <td><a href="http://phytozome.jgi.doe.gov/phytomine" target="_blank" class="extlink">Phytozome</a>- v10.2.1</td>
           <td>Goodstein et al - <a href="http://www.ncbi.nlm.nih.gov/pubmed/22110026" target="_blank" class="extlink">PubMed: 22110026</a></td>
         </tr>
-
+	--%>
         <tr>
-          <td rowspan="3" class="leftcol"><h2><p>Gene Ontology</p></h2></td>
-          <td>GO annotations made by TAIR curators, TIGR Arabidopsis annotation effort</td>
-          <td><a href="http://www.geneontology.org" target="_blank" class="extlink">Gene Ontology Site</a>- 30 Jun 2015</td>
+          <td rowspan="2" class="leftcol"><h2><p>Gene Ontology</p></h2></td>
+          <td>GO annotations from Gene Ontology</td>
+          <td><a href="http://current.geneontology.org/annotations/tair.gaf.gz" target="_blank" class="extlink">Gene Ontology Site</a>- Release 20190509</td>
           <td>Berardini et al., 2004 - <a href="http://www.ncbi.nlm.nih.gov" target="_blank" class="extlink">PubMed: 15173566</a><br />
               Gene Ontology Consortium - <a href="http://www.ncbi.nlm.nih.gov/pubmed/10802651" target="_blank" class="extlink">PubMed:10802651</a></td>
         </tr>
         <tr>
           <td>Several electronic and manual GO annotation methods utilized by UniProt</td>
-          <td><a href="http://www.ebi.ac.uk/GOA/arabidopsis_release" target="_blank" class="extlink">UniProt GOA</a>- Release 2015_08</td>
+          <td><a href="http://www.uniprot.org/uniprot/?format=xml&query=taxonomy%3A3702+AND+reviewed%3Ayes&compress=yes" target="_blank" class="extlink">UniProt GOA</a>- Release 2019_04</td>
           <td>Camon et al - <a href="http://www.ncbi.nlm.nih.gov/pubmed/14681408" target="_blank" class="extlink">PubMed: 14681408</a></td>
         </tr>
+	<%--
+
         <tr>
           <td>InterPro domains to GO terms</td>
           <td><a href="http://www.ebi.ac.uk/interpro" target="_blank" class="extlink">InterPro</a>(from <a href="http://www.geneontology.org" target="_blank" class="extlink">Gene Ontology Site</a>)</td>
@@ -152,7 +154,7 @@
         </tr>
         --%>
         <tr>
-            <td class="leftcol">
+            <td rowspan="2" class="leftcol">
                 <h2><p>Publications</p></h2>
             </td>
             <td>Curated associations between publications and genes from UniProt</td>
@@ -162,6 +164,13 @@
             <td>UniProt Consortium - <a href="http://www.ncbi.nlm.nih.gov/pubmed/17142230" target="_blank"
                                         class="extlink">PubMed: 17142230</a></td>
             <%-- <td>Magrane et al., 2011 - <a href="http://www.ncbi.nlm.nih.gov/pubmed/21447597" target="_blank" class="extlink">PubMed: 21447597</a></td> --%>
+        </tr>
+        <tr>
+            <td>Publications from InterPro</td>
+            <td><a href="ftp://ftp.ebi.ac.uk/pub/databases/interpro/interpro.xml.gz" target="_blank" class="extlink">InterPro</a>- Release v74.0
+            </td>
+            <td>Mulder et al - <a href="http://www.ncbi.nlm.nih.gov/pubmed/17202162" target="_blank" class="extlink">PubMed:
+                17202162</a></td>
         </tr>
         <%--
         <tr>
