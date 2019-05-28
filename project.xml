@@ -1,151 +1,173 @@
 <project type="bio">
-    <property name="target.model" value="genomic"/>
-    <property name="common.os.prefix" value="common"/>
-    <property name="intermine.properties.file" value="thalemine.properties"/>
+	<property name="target.model" value="genomic"/>
+	<property name="common.os.prefix" value="common"/>
+	<property name="intermine.properties.file" value="thalemine.properties"/>
 
-    <sources>
-        <!-- SO terms - Recommended by intermine docs -->
-        <source name="so" type="so">
-            <property name="src.data.file" location="so.obo" />
-            <property name="licence" value="https://creativecommons.org/licenses/by/4.0/"/>
-        </source>
-	
-	<!-- 
-	This must be loaded before GFF data
-	http://purl.obolibrary.org/obo/go/go-basic.obo -->
-	<source name="go" type="go">
-		<property name="src.data.file" location="/DATA/thalemineData/go/go-basic.obo" />
-	</source>
+	<sources>
+		<!-- SO terms - Recommended by intermine docs -->
+		<source name="so" type="so">
+			<property name="src.data.file" location="so.obo" />
+			<property name="licence" value="https://creativecommons.org/licenses/by/4.0/"/>
+		</source>
 
-	<!-- http://current.geneontology.org/annotations/tair.gaf.gz -->
-	<source name="go-annotation" type="go-annotation">
-		<property name="src.data.dir" location="/DATA/thalemineData/go-annotation" />
-		<property name="src.data.includes" value="tair.gaf" />
-		<property name="ontologyPrefix" value="GO"/>
-	</source>
+		<!-- https://raw.githubusercontent.com/HUPO-PSI/psi-mi-CV/master/psi-mi.obo -->
+		<source name="psi-mi-ontology" type="psi-mi-ontology">
+			<property name="src.data.file" location="/DATA/thalemineData/psi/psi-mi.obo"/>
+		</source>
 
-        <!-- A. thaliana FASTA sequence from NCBI -->
-        <source name="bar-ncbi-fasta" type="bar-ncbi-fasta">
-            <property name="fasta.loaderClassName" value="org.intermine.bio.dataconversion.BarNcbiFastaLoaderTask"/>
-            <property name="bar-ncbi-fasta.sequenceType" value="dna"/>
-            <property name="bar-ncbi-fasta.taxonId" value="3702"/>
-            <property name="bar-ncbi-fasta.dataSetTitle" value="Arabidopsis Thaliana"/>
-            <property name="bar-ncbi-fasta.dataSourceName" value="NCBI"/>
-            <property name="bar-ncbi-fasta.className" value="org.intermine.model.bio.Chromosome"/>
-            <property name="bar-ncbi-fasta.classAttribute" value="primaryIdentifier"/>
-            <property name="src.data.dir" location="/DATA/thalemineData/genome/fasta"/>
-            <property name="bar-ncbi-fasta.includes" value="*.fna"/>
-        </source>
+		<!-- 
+			This must be loaded before GFF data
+		http://purl.obolibrary.org/obo/go/go-basic.obo -->
+		<source name="go" type="go">
+			<property name="src.data.file" location="/DATA/thalemineData/go/go-basic.obo" />
+		</source>
 
-        <!-- GFF3 file from TAIR/Araport -->
-        <source name="bar-tair-gff" type="bar-tair-gff">
-            <property name="gff3.taxonId" value="3702"/>
-            <property name="gff3.seqDataSourceName" value="TAIR"/>
-            <property name="gff3.seqClsName" value="Chromosome"/>
-            <property name="gff3.dataSourceName" value="TAIR"/>
-            <property name="gff3.dataSetTitle" value="Genome Anotation"/>
-            <property name="src.data.dir" location="/DATA/thalemineData/genome/gff"/>
-        </source>
-	
-        <!--
-        UniProt SwissProt http://www.uniprot.org/uniprot/?format=xml&query=taxonomy%3A3702+AND+reviewed%3Ayes&compress=yes
-        File name: 3702_uniprot_sprot.xml
-        File name: 3702_uniprot_trembl.xml
-        -->
-        <source name="uniprot" type="uniprot" >
-            <property name="uniprot.organisms" value="3702"/>
-            <property name="src.data.dir" location="/DATA/thalemineData/uniprot"/>
-            <property name="creatego" value="true"/>
-            <property name="creategenes" value="true"/>
-            <property name="allowduplicates" value="false"/>
-            <property name="loadfragments" value="false"/>
-            <property name="loadtrembl" value="true"/>
-        </source>
+		<!-- http://current.geneontology.org/annotations/tair.gaf.gz -->
+		<source name="go-annotation" type="go-annotation">
+			<property name="src.data.dir" location="/DATA/thalemineData/go-annotation" />
+			<property name="src.data.includes" value="tair.gaf" />
+			<property name="ontologyPrefix" value="GO"/>
+		</source>
 
-        <!--
-        UniProt FASTA: ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot_varsplic.fasta.gz
-        File name: uniprot_sprot_varsplic.fasta
-        -->
-        <source name="uniprot-fasta" type="fasta">
-            <property name="fasta.taxonId" value="3702"/>
-            <property name="fasta.className" value="org.intermine.model.bio.Protein"/>
-            <property name="fasta.classAttribute" value="primaryAccession"/>
-            <property name="fasta.dataSetTitle" value="UniProt data set"/>
-            <property name="fasta.dataSourceName" value="UniProt"/>
-            <property name="src.data.dir" location="/DATA/thalemineData/uniprot"/>
-            <property name="fasta.includes" value="uniprot_sprot_varsplic.fasta"/>
-            <property name="fasta.sequenceType" value="protein" />
-            <property name="fasta.loaderClassName" value="org.intermine.bio.dataconversion.UniProtFastaLoaderTask"/>
-        </source>
+		<!-- A. thaliana FASTA sequence from NCBI -->
+		<source name="bar-ncbi-fasta" type="bar-ncbi-fasta">
+			<property name="fasta.loaderClassName" value="org.intermine.bio.dataconversion.BarNcbiFastaLoaderTask"/>
+			<property name="bar-ncbi-fasta.sequenceType" value="dna"/>
+			<property name="bar-ncbi-fasta.taxonId" value="3702"/>
+			<property name="bar-ncbi-fasta.dataSetTitle" value="Arabidopsis Thaliana"/>
+			<property name="bar-ncbi-fasta.dataSourceName" value="NCBI"/>
+			<property name="bar-ncbi-fasta.className" value="org.intermine.model.bio.Chromosome"/>
+			<property name="bar-ncbi-fasta.classAttribute" value="primaryIdentifier"/>
+			<property name="src.data.dir" location="/DATA/thalemineData/genome/fasta"/>
+			<property name="bar-ncbi-fasta.includes" value="*.fna"/>
+		</source>
 
-        <!--
-        UniProt Keywords: ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/docs/keywlist.xml.gz
-        File name: keywlist.xml
-        -->
-        <source name="uniprot-keywords" type="uniprot-keywords">
-            <property name="src.data.dir" location="/DATA/thalemineData/uniprot"/>
-            <property name="src.data.dir.includes" value="keywlist.xml"/>
-        </source>
+		<!-- GFF3 file from TAIR/Araport -->
+		<source name="bar-tair-gff" type="bar-tair-gff">
+			<property name="gff3.taxonId" value="3702"/>
+			<property name="gff3.seqDataSourceName" value="TAIR"/>
+			<property name="gff3.seqClsName" value="Chromosome"/>
+			<property name="gff3.dataSourceName" value="TAIR"/>
+			<property name="gff3.dataSetTitle" value="Genome Anotation"/>
+			<property name="src.data.dir" location="/DATA/thalemineData/genome/gff"/>
+		</source>
 
-	<!-- File: RefGenomeOrthologs.txt: ftp://ftp.pantherdb.org/ortholog/current_release/RefGenomeOrthologs.tar.gz -->
-        <source name="panther" type="panther" dump="true">
-            <property name="src.data.dir" location="/DATA/thalemineData/panther"/>
-	    <property name="panther.organisms" value="3702"/>
-	    <property name="panther.homologues" value="4932 9606"/>
-	</source> 
+		<!--
+			UniProt SwissProt http://www.uniprot.org/uniprot/?format=xml&query=taxonomy%3A3702+AND+reviewed%3Ayes&compress=yes
+			File name: 3702_uniprot_sprot.xml
+			File name: 3702_uniprot_trembl.xml
+		-->
+		<source name="uniprot" type="uniprot" >
+			<property name="uniprot.organisms" value="3702"/>
+			<property name="src.data.dir" location="/DATA/thalemineData/uniprot"/>
+			<property name="creatego" value="true"/>
+			<property name="creategenes" value="true"/>
+			<property name="allowduplicates" value="false"/>
+			<property name="loadfragments" value="false"/>
+			<property name="loadtrembl" value="true"/>
+		</source>
 
-        <!--
-        InterPro data: ftp://ftp.ebi.ac.uk/pub/databases/interpro/interpro.xml.gz
-        Note: InterPro must be run after UniProt.
-        -->
-        <source name="interpro" type="interpro">
-		<property name="src.data.dir" location="/DATA/thalemineData/interpro"/>
-		<property name="src.data.dir.includes" value="interpro.xml"/>
-        </source>
-	
-	<!--
-        Files: ftp://ftp.ebi.ac.uk/pub/databases/interpro/protein2ipr.dat.gz
-        ftp://ftp.ebi.ac.uk/pub/databases/interpro/match_complete.dat.gz
-        -->
-        <source name="protein2ipr" type="protein2ipr">
-            <property name="src.data.dir" location="/DATA/thalemineData/interpro"/>
-            <property name="src.data.dir.includes" value="protein2ipr.dat"/>
-            <property name="protein2ipr.organisms" value="3702"/>
-            <property name="osAlias" value="os.production"/>
-        </source>
+		<!--
+			UniProt FASTA: ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot_varsplic.fasta.gz
+			File name: uniprot_sprot_varsplic.fasta
+		-->
+		<source name="uniprot-fasta" type="fasta">
+			<property name="fasta.taxonId" value="3702"/>
+			<property name="fasta.className" value="org.intermine.model.bio.Protein"/>
+			<property name="fasta.classAttribute" value="primaryAccession"/>
+			<property name="fasta.dataSetTitle" value="UniProt data set"/>
+			<property name="fasta.dataSourceName" value="UniProt"/>
+			<property name="src.data.dir" location="/DATA/thalemineData/uniprot"/>
+			<property name="fasta.includes" value="uniprot_sprot_varsplic.fasta"/>
+			<property name="fasta.sequenceType" value="protein" />
+			<property name="fasta.loaderClassName" value="org.intermine.bio.dataconversion.UniProtFastaLoaderTask"/>
+		</source>
 
+		<!--
+			UniProt Keywords: ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/docs/keywlist.xml.gz
+			File name: keywlist.xml
+		-->
+		<source name="uniprot-keywords" type="uniprot-keywords">
+			<property name="src.data.dir" location="/DATA/thalemineData/uniprot"/>
+			<property name="src.data.dir.includes" value="keywlist.xml"/>
+		</source>
 
-        <!--
-        This will updated Publication added by UniProt souces
-        -->
-        <source name="update-publications" type="update-publications" dump="true">
-            <property name="src.data.file" location="publications.xml"/>
-        </source>
-	
-	<!-- Organism information from NCBI -->
-        <source name="entrez-organism" type="entrez-organism">
-            <property name="src.data.file" location="organisms.xml"/>
-        </source>
+		<!-- File: RefGenomeOrthologs.txt: ftp://ftp.pantherdb.org/ortholog/current_release/RefGenomeOrthologs.tar.gz -->
+		<source name="panther" type="panther" dump="true">
+			<property name="src.data.dir" location="/DATA/thalemineData/panther"/>
+			<property name="panther.organisms" value="3702"/>
+			<property name="panther.homologues" value="4932 9606"/>
+		</source> 
 
-    </sources>
+		<!--
+			InterPro data: ftp://ftp.ebi.ac.uk/pub/databases/interpro/interpro.xml.gz
+			Note: InterPro must be run after UniProt.
+		-->
+		<source name="interpro" type="interpro">
+			<property name="src.data.dir" location="/DATA/thalemineData/interpro"/>
+			<property name="src.data.dir.includes" value="interpro.xml"/>
+		</source>
 
-    <!-- Run post processes. Make sure Solr is running -->
-    <post-processing>
-        <post-process name="create-references"/>
-        <post-process name="make-spanning-locations"/>
-        <post-process name="create-chromosome-locations-and-lengths"/>
-	<post-process name="create-intron-features"/>
-        <post-process name="create-intergenic-region-features"/>
-        <post-process name="transfer-sequences"/>
-        <post-process name="do-sources"/>
-        <post-process name="create-location-overlap-index"/>
-        <post-process name="create-overlap-view"/>
-        <post-process name="populate-child-features"/>
-        <post-process name="create-attribute-indexes"/>
-        <post-process name="summarise-objectstore"/>
-        <post-process name="create-autocomplete-index"/>
-        <post-process name="create-search-index"/>
-    </post-processing>
+		<!--
+			Files: ftp://ftp.ebi.ac.uk/pub/databases/interpro/protein2ipr.dat.gz
+			ftp://ftp.ebi.ac.uk/pub/databases/interpro/match_complete.dat.gz
+		-->
+		<source name="protein2ipr" type="protein2ipr">
+			<property name="src.data.dir" location="/DATA/thalemineData/interpro"/>
+			<property name="src.data.dir.includes" value="protein2ipr.dat"/>
+			<property name="protein2ipr.organisms" value="3702"/>
+			<property name="osAlias" value="os.production"/>
+		</source>
+
+		<!--
+			Unzip Files: ftp://ftp.ebi.ac.uk/pub/databases/IntAct/current/psi25/species/arath.zip
+		-->
+		<source name="psi-intact" type="psi" dump="true">
+			<property name="src.data.dir" location="/DATA/thalemineData/intact"/>
+			<property name="intact.organisms" value="3702"/>
+		</source>
+
+		<!--
+			File: https://downloads.thebiogrid.org/Download/BioGRID/Release-Archive/BIOGRID-3.5.172/BIOGRID-ORGANISM-3.5.172.psi25.zip
+			BIOGRID-ORGANISM-Arabidopsis_thaliana_Columbia-3.5.172.psi25.xml
+		-->
+		<source name="biogrid" type="biogrid">
+			<property name="src.data.dir" location="/DATA/thalemineData/biogrid"/>
+			<property name="src.data.dir.includes" value="*psi25.xml"/>
+			<property name="biogrid.organisms" value="3702"/>
+		</source>
+
+		<!--
+			This will updated Publication added by UniProt souces
+		-->
+		<source name="update-publications" type="update-publications" dump="true">
+			<property name="src.data.file" location="publications.xml"/>
+		</source>
+
+		<!-- Organism information from NCBI -->
+		<source name="entrez-organism" type="entrez-organism">
+			<property name="src.data.file" location="organisms.xml"/>
+		</source>
+
+	</sources>
+
+	<!-- Run post processes. Make sure Solr is running -->
+	<post-processing>
+		<post-process name="create-references"/>
+		<post-process name="make-spanning-locations"/>
+		<post-process name="create-chromosome-locations-and-lengths"/>
+		<post-process name="create-intron-features"/>
+		<post-process name="create-intergenic-region-features"/>
+		<post-process name="transfer-sequences"/>
+		<post-process name="do-sources"/>
+		<post-process name="create-location-overlap-index"/>
+		<post-process name="create-overlap-view"/>
+		<post-process name="populate-child-features"/>
+		<post-process name="create-attribute-indexes"/>
+		<post-process name="summarise-objectstore"/>
+		<post-process name="create-autocomplete-index"/>
+		<post-process name="create-search-index"/>
+	</post-processing>
 
 </project>
 

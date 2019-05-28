@@ -21,4 +21,31 @@
     <tile-name>model/proteins.jsp</tile-name>
     <aspect-source name="UniProt" url="http://www.uniprot.org"/>
   </aspect>
+  <aspect name="Function">
+    <subtitle>GO</subtitle>
+    <intro-text>
+        Gene Ontology
+    </intro-text>
+    <tile-name>model/genes.jsp</tile-name>
+    <aspect-source name="GO" url="http://www.geneontology.org/"/>
+  </aspect>
+  <aspect name="Homology">
+    <subtitle>Orthologues and paralogues</subtitle>
+    <intro-text>
+      Orthologues and Paralogues.
+    </intro-text>
+    <aspect-source name="PantherDB" url="http://www.pantherdb.org/genes/"/>
+  </aspect> 
+  <aspect name="Interactions">
+    <subtitle></subtitle>
+    <icon-image>model/images/interaction.gif</icon-image>
+    <large-image>model/images/interaction.gif</large-image>
+    <tile-name></tile-name>
+    <intro-text>
+      Protein-protein interactions.
+    </intro-text>
+    <tile-name>model/interactions.jsp</tile-name>
+    <aspect-source name="IntAct" url="http://www.ebi.ac.uk/intact/"/>
+    <aspect-source name="BioGRID" url="http://www.thebiogrid.org/"/>
+  </aspect>
 </aspects>

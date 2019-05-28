@@ -16,6 +16,7 @@ export GRADLE_OPTS="-server -Dorg.gradle.daemon=false -Xms512m -Xmx2g -XX:+UsePa
 
 # Load DATA
 ./gradlew integrate -Psource=so -Dorg.gradle.project.release=$VER
+./gradlew integrate -Psource=psi-mi-ontology -Dorg.gradle.project.release=$VER
 ./gradlew integrate -Psource=go -Dorg.gradle.project.release=$VER
 ./gradlew integrate -Psource=go-annotation -Dorg.gradle.project.release=$VER
 ./gradlew integrate -Psource=bar-ncbi-fasta -Dorg.gradle.project.release=$VER
@@ -26,6 +27,8 @@ export GRADLE_OPTS="-server -Dorg.gradle.daemon=false -Xms512m -Xmx2g -XX:+UsePa
 ./gradlew integrate -Psource=interpro -Dorg.gradle.project.release=$VER
 ./gradlew integrate -Psource=protein2ipr -Dorg.gradle.project.release=$VER
 ./gradlew integrate -Psource=panther -Dorg.gradle.project.release=$VER
+./gradlew integrate -Psource=psi-intact -Dorg.gradle.project.release=$VER
+./gradlew integrate -Psource=biogrid -Dorg.gradle.project.release=$VER
 ./gradlew integrate -Psource=update-publications -Dorg.gradle.project.release=$VER
 ./gradlew integrate -Psource=entrez-organism -Dorg.gradle.project.release=$VER
 
