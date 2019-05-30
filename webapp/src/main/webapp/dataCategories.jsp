@@ -122,23 +122,20 @@
           <td><a href="http://www.ebi.ac.uk/interpro" target="_blank" class="extlink">InterPro</a>(from <a href="http://www.geneontology.org" target="_blank" class="extlink">Gene Ontology Site</a>)</td>
           <td>Mulder et al - <a href="http://www.ncbi.nlm.nih.gov/pubmed/17202162" target="_blank" class="extlink">PubMed: 17202162</a></td>
         </tr>
+	--%>
 
         <tr>
-          <td rowspan="3" class="leftcol"><p><h2>Interactions</p><h2></td>
-          <td>Confirmed Arabidopsis interacting proteins come from <a href="http://www.bind.ca/">BIND</a>, the Biomolecular Interaction Network Database, from high-density Arabidopsis protein microarrays (<a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&cmd=Retrieve&dopt=AbstractPlus&list_uids=17360592&query_hl=6&itool=pubmed_ExternalLink">Popescu et al., 2007</a>; <a href="http://dx.doi.org/10.1101/gad.1740009">Popescu et al., 2009</a>), from Braun et al.'s Arabidopsis Interactome <a href="http://dx.doi.org/10.1126/science.1203877">2011</a>, from Wolf Frommer's Membrane protein INteractome Database <a href="http://associomics.org">MIND</a>, and over 1190 other literature sources.</td>
-          <td><a href="http://bar.utoronto.ca/" target="_blank" class="extlink">Bio-Analytic Resource</a> for Plant Biology</td>
-          <td>Geisler-Lee et al., 2007 - <a href="http://www.ncbi.nlm.nih.gov/pubmed/17675552">PubMed: 17675552</a></td>
-        </tr>
-        <tr>
-          <td>Public database that archives and disseminates genetic and protein interaction data from model organisms and humans</td>
-          <td><a href="http://thebiogrid.org/" target="_blank" class="extlink">BioGRID</a>- version 3.4.128</td>
+          <td rowspan="2" class="leftcol"><p><h2>Interactions</p><h2></td>
+          <td>Curated set of genetic and physical interactions for Arabidopsis thaliana</td>
+          <td><a href="https://downloads.thebiogrid.org/Download/BioGRID/Release-Archive/BIOGRID-3.5.172/BIOGRID-ORGANISM-3.5.172.psi25.zip" target="_blank" class="extlink">BioGRID</a>- Release 3.5.172</td>
           <td>Chatr-Aryamontri et al., 2014 - <a href="http://www.ncbi.nlm.nih.gov/pubmed/25428363">PubMed: 25428363</a></td>
         </tr>
         <tr>
-          <td>Freely available, open source database system and analysis tools for molecular interaction data, derived from literature curation or direct user submissions</td>
-          <td><a href="http://www.ebi.ac.uk/intact/" target="_blank" class="extlink">IntAct</a>- 22 Aug 2015</td>
+          <td>Curated binary and complex protein-protein interactions for Arabidopsis thaliana</td>
+          <td><a href="ftp://ftp.ebi.ac.uk/pub/databases/IntAct/current/psi25/species/arath.zip" target="_blank" class="extlink">IntAct</a>- Downloaded 20190528</td>
           <td>Kerrien et al., 2012 - <a href="http://www.ncbi.nlm.nih.gov/pubmed/22121220">PubMed: 22121220</a></td>
         </tr>
+	<%--
 
         <tr>
           <td rowspan="2" class="leftcol"><p><h2>Expression</h2></p></td>

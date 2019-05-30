@@ -5,6 +5,15 @@
     </fields>
   </class>
 
+  <class className="org.intermine.model.bio.Homologue">
+    <fields>
+      <fieldconfig fieldExpr="gene.primaryIdentifier" showInResults="false" showInInlineCollection="false" />
+      <fieldconfig fieldExpr="homologue.primaryIdentifier" label="Homologue DB Identifier"/>
+      <fieldconfig fieldExpr="homologue.organism.shortName" label="Homologue organism"/>
+      <fieldconfig fieldExpr="type"/>
+    </fields>
+  </class>
+
   <class className="org.intermine.model.bio.BioEntity">
     <headerconfig>
       <titles>
@@ -215,25 +224,26 @@
   <tableExportConfig id="bed" className="org.intermine.bio.web.export.BEDHttpExporter"/>
 
   <reportdisplayers>
-<!--
-    <reportdisplayer javaClass="org.intermine.bio.web.displayer.HomologueDisplayer"
-                     jspName="model/homologueDisplayer.jsp"
-                     replacesFields="homologues"
-                     placement="Homology"
-                     parameters="{'dataSets': ['Panther data set']}"
-                     types="Gene"/>
--->
-    <reportdisplayer javaClass="org.intermine.bio.web.displayer.CytoscapeNetworkDisplayer"
-	             jspName="model/cytoscapeNetworkDisplayer.jsp"
-	             replacesFields="interactions"
-	             placement="Interactions"
-	             types="Gene,Protein"/>
 
-   <reportdisplayer javaClass="org.intermine.bio.web.displayer.GeneOntologyDisplayer"
-                     jspName="model/geneOntologyDisplayer.jsp"
-                     replacesFields="goAnnotation,ontologyAnnotations"
-                     placement="Function"
-                     types="Gene"/>
+<!-- Summary -->
+    <reportdisplayer javaClass="org.thalemine.web.displayer.AlleleSummaryDisplayer"
+                     jspName="model/alleleSummaryDisplayer.jsp"
+                     replacesFields="sequenceAlterationType, mutagen, mutationSite, alleleClass, inheritanceMode, publications, organism"
+                     placement="summary"
+                     types="Allele"/>
+    
+    <reportdisplayer javaClass="org.thalemine.web.displayer.PublicationCountsDisplayer"
+                     jspName="model/publicationCountsDisplayer.jsp"
+                     replacesFields="publications"
+                     placement="Genomics"
+                     types="BioEntity"/>
+
+<!-- Genomics -->
+    <reportdisplayer javaClass="org.intermine.bio.web.displayer.SequenceFeatureDisplayer"
+                     jspName="model/sequenceFeatureDisplayer.jsp"
+                     replacesFields="chromosome,chromosomeLocation,sequence,length,sequenceOntologyTerm,locations,cytoLocation"
+                     placement="Genomics"
+		     types="SequenceFeature"/>
 
     <reportdisplayer javaClass="org.intermine.bio.web.displayer.GeneStructureDisplayer"
                      jspName="model/geneStructureDisplayer.jsp"
@@ -241,17 +251,41 @@
                      placement="Genomics"
                      types="Gene,Transcript,Exon,Intron,UTR,CDS"/>
 
-    <reportdisplayer javaClass="org.intermine.bio.web.displayer.SequenceFeatureDisplayer"
-                     jspName="model/sequenceFeatureDisplayer.jsp"
-                     replacesFields="chromosome,chromosomeLocation,sequence,length,sequenceOntologyTerm,locations,cytoLocation"
-                     placement="summary"
+    <reportdisplayer javaClass="org.intermine.bio.web.displayer.OverlappingFeaturesDisplayer"
+                     jspName="model/overlappingFeaturesDisplayer.jsp"
+                     replacesFields="overlappingFeatures"
+                     placement="Genomics"
                      types="SequenceFeature"/>
 
+<!-- Proteins -->
     <reportdisplayer javaClass="org.intermine.bio.web.displayer.UniProtCommentsDisplayer"
                      jspName="model/uniProtCommentsDisplayer.jsp"
                      replacesFields=""
                      placement="Proteins"
 	             types="Gene,Protein"/>
+
+<!-- Function -->
+    <reportdisplayer javaClass="org.intermine.bio.web.displayer.GeneOntologyDisplayer"
+                     jspName="model/geneOntologyDisplayer.jsp"
+                     replacesFields="goAnnotation,ontologyAnnotations"
+                     placement="Function"
+                     types="Gene"/>
+
+
+<!-- Interactions -->
+    <reportdisplayer javaClass="org.intermine.bio.web.displayer.CytoscapeNetworkDisplayer"
+	             jspName="model/cytoscapeNetworkDisplayer.jsp"
+	             replacesFields="interactions"
+	             placement="Interactions"
+	             types="Gene"/>
+
+<!-- HOMOLOGY -->
+    <reportdisplayer javaClass="org.intermine.bio.web.displayer.HomologueDisplayer"
+                     jspName="model/homologueDisplayer.jsp"
+                     replacesFields="homologues"
+                     placement="Homology"
+                     parameters="{'dataSets': ['Panther data set']}"
+                     types="Gene"/>
 	
   </reportdisplayers>
 

@@ -15,12 +15,12 @@ export GRADLE_OPTS="-server -Dorg.gradle.daemon=false -Xms512m -Xmx2g -XX:+UsePa
 ./gradlew buildDB -Dorg.gradle.project.release=$VER
 
 # Load DATA
-./gradlew integrate -Psource=so -Dorg.gradle.project.release=$VER
 ./gradlew integrate -Psource=psi-mi-ontology -Dorg.gradle.project.release=$VER
-./gradlew integrate -Psource=go -Dorg.gradle.project.release=$VER
-./gradlew integrate -Psource=go-annotation -Dorg.gradle.project.release=$VER
+./gradlew integrate -Psource=so -Dorg.gradle.project.release=$VER
 ./gradlew integrate -Psource=bar-ncbi-fasta -Dorg.gradle.project.release=$VER
 ./gradlew integrate -Psource=bar-tair-gff -Dorg.gradle.project.release=$VER
+./gradlew integrate -Psource=go -Dorg.gradle.project.release=$VER
+./gradlew integrate -Psource=go-annotation -Dorg.gradle.project.release=$VER
 ./gradlew integrate -Psource=uniprot -Dorg.gradle.project.release=$VER
 ./gradlew integrate -Psource=uniprot-fasta -Dorg.gradle.project.release=$VER
 ./gradlew integrate -Psource=uniprot-keywords -Dorg.gradle.project.release=$VER

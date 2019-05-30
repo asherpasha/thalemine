@@ -19,7 +19,7 @@
 <c:set var="endurl" value="&class=Gene&origin=ThaleMine" />
 
 
-<!-- 'horizontal' table
+<%-- 'horizontal' table
 <table class="tiny-font">
   <thead>
   <tr>
@@ -55,7 +55,7 @@
     </tr>
   </tbody>
 </table>
--->
+--%>
 
 <table class="tiny-font">
   <tbody>

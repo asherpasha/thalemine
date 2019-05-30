@@ -1,0 +1,26 @@
+<items>
+<item id="-1_3" class="Organism">
+<attribute name="commonName" value="thale cress"/>
+<attribute name="genus" value="Arabidopsis"/>
+<attribute name="name" value="Arabidopsis thaliana"/>
+<attribute name="shortName" value="A. thaliana"/>
+<attribute name="species" value="thaliana"/>
+<attribute name="taxonId" value="3702"/>
+</item>
+<item id="-1_2" class="Organism">
+<attribute name="commonName" value="baker's yeast"/>
+<attribute name="genus" value="Saccharomyces"/>
+<attribute name="name" value="Saccharomyces cerevisiae"/>
+<attribute name="shortName" value="S. cerevisiae"/>
+<attribute name="species" value="cerevisiae"/>
+<attribute name="taxonId" value="4932"/>
+</item>
+<item id="-1_1" class="Organism">
+<attribute name="commonName" value="human"/>
+<attribute name="genus" value="Homo"/>
+<attribute name="name" value="Homo sapiens"/>
+<attribute name="shortName" value="H. sapiens"/>
+<attribute name="species" value="sapiens"/>
+<attribute name="taxonId" value="9606"/>
+</item>
+</items>

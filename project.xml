@@ -4,29 +4,16 @@
 	<property name="intermine.properties.file" value="thalemine.properties"/>
 
 	<sources>
-		<!-- SO terms - Recommended by intermine docs -->
-		<source name="so" type="so">
-			<property name="src.data.file" location="so.obo" />
-			<property name="licence" value="https://creativecommons.org/licenses/by/4.0/"/>
-		</source>
 
 		<!-- https://raw.githubusercontent.com/HUPO-PSI/psi-mi-CV/master/psi-mi.obo -->
 		<source name="psi-mi-ontology" type="psi-mi-ontology">
 			<property name="src.data.file" location="/DATA/thalemineData/psi/psi-mi.obo"/>
 		</source>
 
-		<!-- 
-			This must be loaded before GFF data
-		http://purl.obolibrary.org/obo/go/go-basic.obo -->
-		<source name="go" type="go">
-			<property name="src.data.file" location="/DATA/thalemineData/go/go-basic.obo" />
-		</source>
-
-		<!-- http://current.geneontology.org/annotations/tair.gaf.gz -->
-		<source name="go-annotation" type="go-annotation">
-			<property name="src.data.dir" location="/DATA/thalemineData/go-annotation" />
-			<property name="src.data.includes" value="tair.gaf" />
-			<property name="ontologyPrefix" value="GO"/>
+		<!-- SO terms - Recommended by intermine docs -->
+		<source name="so" type="so">
+			<property name="src.data.file" location="so.obo" />
+			<property name="licence" value="https://creativecommons.org/licenses/by/4.0/"/>
 		</source>
 
 		<!-- A. thaliana FASTA sequence from NCBI -->
@@ -50,6 +37,20 @@
 			<property name="gff3.dataSourceName" value="TAIR"/>
 			<property name="gff3.dataSetTitle" value="Genome Anotation"/>
 			<property name="src.data.dir" location="/DATA/thalemineData/genome/gff"/>
+		</source>
+		
+		<!-- 
+			This must be loaded before GFF data
+		http://purl.obolibrary.org/obo/go/go-basic.obo -->
+		<source name="go" type="go">
+			<property name="src.data.file" location="/DATA/thalemineData/go/go-basic.obo" />
+		</source>
+
+		<!-- http://current.geneontology.org/annotations/tair.gaf.gz -->
+		<source name="go-annotation" type="go-annotation">
+			<property name="src.data.dir" location="/DATA/thalemineData/go-annotation" />
+			<property name="src.data.includes" value="tair.gaf" />
+			<property name="ontologyPrefix" value="GO"/>
 		</source>
 
 		<!--
