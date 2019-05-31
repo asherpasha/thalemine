@@ -226,18 +226,6 @@
   <reportdisplayers>
 
 <!-- Summary -->
-    <reportdisplayer javaClass="org.thalemine.web.displayer.AlleleSummaryDisplayer"
-                     jspName="model/alleleSummaryDisplayer.jsp"
-                     replacesFields="sequenceAlterationType, mutagen, mutationSite, alleleClass, inheritanceMode, publications, organism"
-                     placement="summary"
-                     types="Allele"/>
-    
-    <reportdisplayer javaClass="org.thalemine.web.displayer.PublicationCountsDisplayer"
-                     jspName="model/publicationCountsDisplayer.jsp"
-                     replacesFields="publications"
-                     placement="Genomics"
-                     types="BioEntity"/>
-
 <!-- Genomics -->
     <reportdisplayer javaClass="org.intermine.bio.web.displayer.SequenceFeatureDisplayer"
                      jspName="model/sequenceFeatureDisplayer.jsp"
@@ -260,7 +248,7 @@
 <!-- Proteins -->
     <reportdisplayer javaClass="org.intermine.bio.web.displayer.UniProtCommentsDisplayer"
                      jspName="model/uniProtCommentsDisplayer.jsp"
-                     replacesFields=""
+                     replacesFields="proteins"
                      placement="Proteins"
 	             types="Gene,Protein"/>
 
