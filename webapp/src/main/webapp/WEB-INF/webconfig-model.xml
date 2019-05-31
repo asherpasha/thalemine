@@ -281,6 +281,12 @@
                      placement="Homology"
                      parameters="{'dataSets': ['Panther data set']}"
                      types="Gene"/>
+
+    <reportdisplayer javaClass="org.thalemine.web.displayer.PhytomineOrthologDisplayer"
+                     jspName="model/phytomineOrthologDisplayer.jsp"
+                     replacesFields=""
+                     placement="Homology"
+                     types="Gene"/>
 	
   </reportdisplayers>
 
