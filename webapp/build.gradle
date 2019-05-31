@@ -21,6 +21,7 @@ def explodedWebAppDir = "$buildDir/explodedWebApp"
 def mergePropsDir = "$buildDir/props"
 
 dependencies {
+    providedCompile group: 'javax.servlet', name: 'javax.servlet-api', version: '3.0.1'
     compile (project(":dbmodel")) {transitive = false}
     compile group: "org.intermine", name: "bio-core", version: System.getProperty("bioVersion"), transitive: false
     compile group: "org.intermine", name: "intermine-api", version: System.getProperty("imVersion")

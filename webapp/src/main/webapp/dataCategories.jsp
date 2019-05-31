@@ -135,15 +135,15 @@
           <td><a href="ftp://ftp.ebi.ac.uk/pub/databases/IntAct/current/psi25/species/arath.zip" target="_blank" class="extlink">IntAct</a>- Downloaded 20190528</td>
           <td>Kerrien et al., 2012 - <a href="http://www.ncbi.nlm.nih.gov/pubmed/22121220">PubMed: 22121220</a></td>
         </tr>
-	<%--
 
         <tr>
-          <td rowspan="2" class="leftcol"><p><h2>Expression</h2></p></td>
+          <td rowspan="1" class="leftcol"><p><h2>Expression</h2></p></td>
           <td>Electronic Fluorescent Pictograph (eFP) Visualization paints gene expression information from one of the AtGenExpress data sets or other compendia for a desired gene onto a diagrammatic representation of <em>Arabidopsis thaliana</em> plants.</td>
-          <td>BAR Arabidopsis <a href="http://bar.utoronto.ca/webservices/efp_service/efp_service.php" target="_blank" class="extlink">eFP Webservices</a></td>
+          <td><a href="http://bar.utoronto.ca/webservices/efp_service/efp_service.php" target="_blank" class="extlink">BAR eFP Webservice</a>- realtime</td>
           <td>Winter et al., 2007 - <a href="http://www.ncbi.nlm.nih.gov/pubmed/17684564" target="_blank" class="extlink">PubMed: 17684564</a><br />
               Brady et al., 2009 - <a href="http://www.ncbi.nlm.nih.gov/pubmed/19401381" target="_blank" class="extlink">PubMed: 19401381</a></td>
         </tr>
+	<%--
         <tr>
           <td>AtGenExpress data summarizing global gene expression in Arabidopsis in response to seven basic phytohormones (auxin, cytokinin, gibberellin, brassinosteroid, abscisic acid, jasmonate and ethylene) and their inhibitors (and in related experiments), as part of the AtGenExpress project.</td>
           <td><a href="http://www.weigelworld.org/resources/microarray/AtGenExpress/" target="_blank" class="extlink">AtGenExpress</a>- Weigel World</td>

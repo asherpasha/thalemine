@@ -41,6 +41,19 @@
     <aspect-source name="IntAct" url="http://www.ebi.ac.uk/intact/"/>
     <aspect-source name="BioGRID" url="http://www.thebiogrid.org/"/>
   </aspect>
+  <aspect name="Expression">
+    <subtitle></subtitle>
+    <icon-image>model/images/embryos.jpg</icon-image>
+    <large-image>model/images/embryos.jpg</large-image>
+    <intro-text>
+      &lt;p&gt;
+      Gene expression data for &lt;i&gt;Arabidopsis thaliana&lt;/i&gt;.
+      &lt;/p&gt;
+    </intro-text>
+    <tile-name>model/expression.jsp</tile-name>
+    <aspect-source name="AtGenExpress" url="http://www.weigelworld.org/resources/microarray/AtGenExpress/"/>
+    <aspect-source name="BAR" url="http://bar.utoronto.edu/"/>
+  </aspect>
   <aspect name="Homology">
     <subtitle>Orthologues and paralogues</subtitle>
     <intro-text>

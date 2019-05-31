@@ -267,6 +267,13 @@
 	             placement="Interactions"
 	             types="Gene"/>
 
+<!-- Expression -->
+    <reportdisplayer javaClass="org.thalemine.web.displayer.BarEfpBrowserDisplayer"
+                     jspName="model/eFPBrowserDisplayer.jsp"
+                     replacesFields=""
+                     placement="Expression"
+                     types="Gene"/>
+
 <!-- HOMOLOGY -->
     <reportdisplayer javaClass="org.intermine.bio.web.displayer.HomologueDisplayer"
                      jspName="model/homologueDisplayer.jsp"
