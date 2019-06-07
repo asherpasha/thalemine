@@ -43,7 +43,7 @@
           <option value="Germination">Germination</option>
           <option value="Guard_Cell">Guard Cell</option>
           <option value="Hormone">Hormone</option>
-          <option value="Klepikova_Atlas">Klepikova Atlas</option>
+          <option value="Klepikova_Atlas" selected>Klepikova Atlas</option>
           <option value="Lateral_Root_Initiation">Lateral Root Initiation</option>
           <option value="Light_Series">Light Series</option>
           <option value="Natural_Variation">Natural Variation</option>
@@ -52,6 +52,7 @@
           <option value="Root_II">Root II</option>
           <option value="Seed">Seed</option>
           <option value="Shoot_Apex">Shoot Apex</option>
+	  <option value="Silique">Silique</option>
           <option value="Tissue_Specific">Tissue Specific</option>
       </select>
       <br /><br />
