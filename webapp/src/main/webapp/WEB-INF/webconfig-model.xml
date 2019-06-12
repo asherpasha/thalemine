@@ -275,12 +275,6 @@
                      types="Gene"/>
 
 <!-- HOMOLOGY -->
-    <reportdisplayer javaClass="org.intermine.bio.web.displayer.HomologueDisplayer"
-                     jspName="model/homologueDisplayer.jsp"
-                     replacesFields="homologues"
-                     placement="Homology"
-                     parameters="{'dataSets': ['Panther data set']}"
-                     types="Gene"/>
 
     <reportdisplayer javaClass="org.thalemine.web.displayer.PhytomineOrthologDisplayer"
                      jspName="model/phytomineOrthologDisplayer.jsp"
