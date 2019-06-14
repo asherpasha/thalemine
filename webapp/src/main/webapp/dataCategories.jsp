@@ -149,7 +149,7 @@
         </tr>
         --%>
         <tr>
-            <td rowspan="2" class="leftcol">
+            <td rowspan="3" class="leftcol">
                 <h2><p>Publications</p></h2>
             </td>
             <td>Curated associations between publications and genes from UniProt</td>
@@ -168,13 +168,19 @@
                 17202162</a></td>
         </tr>
         <tr>
+            <td>Publications from NCBI</td>
+            <td><a href="ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/gene2pubmed.gz" target="_blank" class="extlink">NCBI</a>- Downloaded 20190614</td>
+            <td>Magrane et al., 2011 - <a href="http://www.ncbi.nlm.nih.gov/pubmed/21447597" target="_blank" class="extlink">PubMed: 21447597</a></td>
+        </tr>
+        <tr>
             <td class="leftcol">
                 <h2><p>GeneRIF</p></h2>
             </td>
             <td>Concise phrase describing gene function and publication associated with NCBI Gene records</td>
-            <td><a href="ftp://ftp.ncbi.nlm.nih.gov/gene/GeneRIF/generifs_basic.gz" target="_blank" class="extlink">NCBI</a>- Download 20190612</td>
-                <td>Magrane et al., 2011 - <a href="http://www.ncbi.nlm.nih.gov/pubmed/21447597" target="_blank" class="extlink">PubMed: 21447597</a></td>
+            <td><a href="ftp://ftp.ncbi.nlm.nih.gov/gene/GeneRIF/generifs_basic.gz" target="_blank" class="extlink">NCBI</a>- Downloaded 20190612</td>
+            <td>Magrane et al., 2011 - <a href="http://www.ncbi.nlm.nih.gov/pubmed/21447597" target="_blank" class="extlink">PubMed: 21447597</a></td>
         </tr>
+         
         <%--
         <tr>
           <td class="leftcol"><h2><p>Pathways</p></h2></td>

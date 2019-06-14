@@ -38,6 +38,13 @@
 			<property name="gff3.dataSetTitle" value="Genome Anotation"/>
 			<property name="src.data.dir" location="/DATA/thalemineData/genome/gff"/>
 		</source>
+		
+		<!-- Unzip: ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/gene2pubmed.gz -->
+		<source name="pubmed-gene" type="pubmed-gene">
+			<property name="src.data.dir" location="/DATA/thalemineData/pubmed" />
+			<property name="pubmed.organisms" value="3702"/>
+			<property name="src.data.dir.includes" value="gene2pubmed"/>
+		</source>
 
 		<!-- 
 			This must be loaded before GFF data
