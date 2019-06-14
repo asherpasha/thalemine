@@ -52,7 +52,7 @@
     </intro-text>
     <tile-name>model/expression.jsp</tile-name>
     <aspect-source name="AtGenExpress" url="http://www.weigelworld.org/resources/microarray/AtGenExpress/"/>
-    <aspect-source name="BAR" url="http://bar.utoronto.edu/"/>
+    <aspect-source name="BAR" url="http://bar.utoronto.ca/"/>
   </aspect>
   <aspect name="Homology">
     <subtitle>Orthologues and paralogues</subtitle>

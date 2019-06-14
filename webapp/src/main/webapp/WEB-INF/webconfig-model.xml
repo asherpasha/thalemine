@@ -7,7 +7,7 @@
 
   <class className="org.intermine.model.bio.Homologue">
     <fields>
-      <fieldconfig fieldExpr="gene.primaryIdentifier" showInResults="false" showInInlineCollection="false" />
+      <fieldconfig fieldExpr="gene.primaryIdentifier" label="Gene ID"/>
       <fieldconfig fieldExpr="homologue.primaryIdentifier" label="Homologue DB Identifier"/>
       <fieldconfig fieldExpr="homologue.organism.shortName" label="Homologue organism"/>
       <fieldconfig fieldExpr="type"/>
@@ -89,6 +89,16 @@
       <fieldconfig fieldExpr="chromosomeLocation.start" showInInlineCollection="false" showInSummary="false" />
       <fieldconfig fieldExpr="chromosomeLocation.end" showInInlineCollection="false" showInSummary="false" />
       <fieldconfig fieldExpr="organism.name"/>
+    </fields>
+  </class>
+
+  <class className="org.intermine.model.bio.Generif" label="GeneRIF (Gene Reference into Function)" >
+    <fields>
+      <fieldconfig fieldExpr="annotation" />
+      <fieldconfig fieldExpr="timeStamp" label="last updated" showInSummary="false" showInInlineCollection="false" />
+      <fieldconfig fieldExpr="organism.shortName" label="Organism" showInInlineCollection="false" />
+      <fieldconfig fieldExpr="gene.symbol" label="Gene" showInInlineCollection="false" />
+      <fieldconfig fieldExpr="publication.pubMedId" label="PubMed Id" />
     </fields>
   </class>
 

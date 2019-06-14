@@ -5,53 +5,54 @@
 # Date: April 2019
 
 # Set version number. This is the thalemine.properties.20190419 file
-export VER=20190509
 export GRADLE_OPTS="-server -Dorg.gradle.daemon=false -Xms512m -Xmx2g -XX:+UseParallelGC -XX:SoftRefLRUPolicyMSPerMB=1 -XX:MaxHeapFreeRatio=99"
 
 # Clean
-./gradlew clean -Dor.gradle.project.release=$VER
+#./gradlew clean -Dorg.gradle.project.release=$VER
+./gradlew clean
 
 # BuildDB
-./gradlew buildDB -Dorg.gradle.project.release=$VER
+./gradlew buildDB
 
 # Load DATA
-./gradlew integrate -Psource=psi-mi-ontology -Dorg.gradle.project.release=$VER
-./gradlew integrate -Psource=so -Dorg.gradle.project.release=$VER
-./gradlew integrate -Psource=bar-ncbi-fasta -Dorg.gradle.project.release=$VER
-./gradlew integrate -Psource=bar-tair-gff -Dorg.gradle.project.release=$VER
-./gradlew integrate -Psource=go -Dorg.gradle.project.release=$VER
-./gradlew integrate -Psource=go-annotation -Dorg.gradle.project.release=$VER
-./gradlew integrate -Psource=uniprot -Dorg.gradle.project.release=$VER
-./gradlew integrate -Psource=uniprot-fasta -Dorg.gradle.project.release=$VER
-./gradlew integrate -Psource=uniprot-keywords -Dorg.gradle.project.release=$VER
-./gradlew integrate -Psource=interpro -Dorg.gradle.project.release=$VER
-./gradlew integrate -Psource=protein2ipr -Dorg.gradle.project.release=$VER
-./gradlew integrate -Psource=panther -Dorg.gradle.project.release=$VER
-./gradlew integrate -Psource=psi-intact -Dorg.gradle.project.release=$VER
-./gradlew integrate -Psource=biogrid -Dorg.gradle.project.release=$VER
-./gradlew integrate -Psource=update-publications -Dorg.gradle.project.release=$VER
-./gradlew integrate -Psource=entrez-organism -Dorg.gradle.project.release=$VER
+./gradlew integrate -Psource=psi-mi-ontology
+./gradlew integrate -Psource=so
+./gradlew integrate -Psource=bar-ncbi-fasta
+./gradlew integrate -Psource=bar-tair-gff
+./gradlew integrate -Psource=go
+./gradlew integrate -Psource=go-annotation
+./gradlew integrate -Psource=uniprot
+./gradlew integrate -Psource=uniprot-fasta
+./gradlew integrate -Psource=uniprot-keywords
+./gradlew integrate -Psource=interpro
+./gradlew integrate -Psource=protein2ipr
+./gradlew integrate -Psource=generif
+./gradlew integrate -Psource=panther
+./gradlew integrate -Psource=psi-intact
+./gradlew integrate -Psource=biogrid
+./gradlew integrate -Psource=update-publications
+./gradlew integrate -Psource=entrez-organism
 
 # Run all post processes
-#./gradlew postProcess -Dorg.gradle.project.release=$VER
+#./gradlew postProcess
 
-./gradlew postProcess -Pprocess=create-references -Dorg.gradle.project.release=$VER
-./gradlew postProcess -Pprocess=make-spanning-locations -Dorg.gradle.project.release=$VER
-./gradlew postProcess -Pprocess=create-chromosome-locations-and-lengths -Dorg.gradle.project.release=$VER
-./gradlew postProcess -Pprocess=create-intron-features -Dorg.gradle.project.release=$VER
-./gradlew postProcess -Pprocess=create-intergenic-region-features -Dorg.gradle.project.release=$VER
-./gradlew postProcess -Pprocess=transfer-sequences -Dorg.gradle.project.release=$VER
-./gradlew postProcess -Pprocess=do-sources -Dorg.gradle.project.release=$VER
-./gradlew postProcess -Pprocess=create-location-overlap-index -Dorg.gradle.project.release=$VER
-./gradlew postProcess -Pprocess=create-overlap-view -Dorg.gradle.project.release=$VER
-./gradlew postProcess -Pprocess=populate-child-features -Dorg.gradle.project.release=$VER
-./gradlew postProcess -Pprocess=create-attribute-indexes -Dorg.gradle.project.release=$VER
-./gradlew postProcess -Pprocess=summarise-objectstore -Dorg.gradle.project.release=$VER
-./gradlew postProcess -Pprocess=create-autocomplete-index -Dorg.gradle.project.release=$VER
-./gradlew postProcess -Pprocess=create-search-index -Dorg.gradle.project.release=$VER
+./gradlew postProcess -Pprocess=create-references
+./gradlew postProcess -Pprocess=make-spanning-locations
+./gradlew postProcess -Pprocess=create-chromosome-locations-and-lengths
+./gradlew postProcess -Pprocess=create-intron-features
+./gradlew postProcess -Pprocess=create-intergenic-region-features
+./gradlew postProcess -Pprocess=transfer-sequences
+./gradlew postProcess -Pprocess=do-sources
+./gradlew postProcess -Pprocess=create-location-overlap-index
+./gradlew postProcess -Pprocess=create-overlap-view
+./gradlew postProcess -Pprocess=populate-child-features
+./gradlew postProcess -Pprocess=create-attribute-indexes
+./gradlew postProcess -Pprocess=summarise-objectstore
+./gradlew postProcess -Pprocess=create-autocomplete-index
+./gradlew postProcess -Pprocess=create-search-index
 
 # Might have to build user database
-#./gradlew buildUserDB -Dorg.gradle.project.release=$VER
-./gradlew cargoRedeployRemote -Dorg.gradle.project.release=$VER
+#./gradlew buildUserDB
+./gradlew cargoRedeployRemote
 
 

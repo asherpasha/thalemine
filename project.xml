@@ -38,7 +38,7 @@
 			<property name="gff3.dataSetTitle" value="Genome Anotation"/>
 			<property name="src.data.dir" location="/DATA/thalemineData/genome/gff"/>
 		</source>
-		
+
 		<!-- 
 			This must be loaded before GFF data
 		http://purl.obolibrary.org/obo/go/go-basic.obo -->
@@ -93,7 +93,10 @@
 			<property name="src.data.dir.includes" value="keywlist.xml"/>
 		</source>
 
-		<!-- File: RefGenomeOrthologs.txt: ftp://ftp.pantherdb.org/ortholog/current_release/RefGenomeOrthologs.tar.gz -->
+		<!-- 
+			File: RefGenomeOrthologs.txt: ftp://ftp.pantherdb.org/ortholog/current_release/RefGenomeOrthologs.tar.gz 
+			Note: This source is adding Genes in the form of At1g01010 not AT1G01010. This need to be corrected.
+		-->
 		<source name="panther" type="panther" dump="true">
 			<property name="src.data.dir" location="/DATA/thalemineData/panther"/>
 			<property name="panther.organisms" value="3702"/>
@@ -118,6 +121,16 @@
 			<property name="src.data.dir.includes" value="protein2ipr.dat"/>
 			<property name="protein2ipr.organisms" value="3702"/>
 			<property name="osAlias" value="os.production"/>
+		</source>
+
+		<!--
+			Unzip file: ftp://ftp.ncbi.nlm.nih.gov/gene/GeneRIF/generifs_basic.gz
+		-->
+		<source name="generif" type="generif">
+			<property name="src.data.dir" location="/DATA/thalemineData/generif"/>
+			<property name="generif.organisms" value="3702"/>
+			<property name="generif.datasourcename" value="GeneRIF"/>
+			<property name="generif.datasetname" value="GeneRIF data set"/>
 		</source>
 
 		<!--
