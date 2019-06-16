@@ -22,6 +22,8 @@ export GRADLE_OPTS="-server -Dorg.gradle.daemon=false -Xms512m -Xmx2g -XX:+UsePa
 ./gradlew integrate -Psource=pubmed-gene
 ./gradlew integrate -Psource=go
 ./gradlew integrate -Psource=go-annotation
+./gradlew integrate -Psource=po
+./gradlew integrate -Psource=po-annotation
 ./gradlew integrate -Psource=uniprot
 ./gradlew integrate -Psource=uniprot-fasta
 ./gradlew integrate -Psource=uniprot-keywords
