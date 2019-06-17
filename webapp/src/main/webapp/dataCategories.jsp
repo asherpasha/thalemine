@@ -105,7 +105,7 @@
           <td rowspan="2" class="leftcol"><h2><p>Gene Ontology</p></h2></td>
           <td>GO annotations from Gene Ontology</td>
           <td><a href="http://current.geneontology.org/annotations/tair.gaf.gz" target="_blank" class="extlink">Gene Ontology</a>- Release 20190509</td>
-          <td>Berardini et al., 2004 - <a href="http://www.ncbi.nlm.nih.gov" target="_blank" class="extlink">PubMed: 15173566</a><br />
+          <td>Berardini et al., 2004 - <a href="http://www.ncbi.nlm.nih.gov/pubmed/15173566" target="_blank" class="extlink">PubMed: 15173566</a><br />
               Gene Ontology Consortium - <a href="http://www.ncbi.nlm.nih.gov/pubmed/10802651" target="_blank" class="extlink">PubMed:10802651</a></td>
         </tr>
         <tr>
@@ -113,6 +113,16 @@
           <td><a href="http://www.uniprot.org/uniprot/?format=xml&query=taxonomy%3A3702+AND+reviewed%3Ayes&compress=yes" target="_blank" class="extlink">UniProt</a>- Release 2019_04</td>
           <td>Camon et al - <a href="http://www.ncbi.nlm.nih.gov/pubmed/14681408" target="_blank" class="extlink">PubMed: 14681408</a></td>
         </tr>
+        <tr>
+          <td rowspan="2" class="leftcol"><h2><p>Plant Ontology</p></h2></td>
+          <td>PO anatomy data from TAIR</td>
+          <td><a href="https://www.arabidopsis.org/download_files/Public_Data_Releases/TAIR_Data_20180331/po_anatomy_gene_arabidopsis_tair.assoc.gz" target="_blank" class="extlink">TAIR</a>- Release 20180331</td>
+          <td rowspan="2">Berardini et al., 2015 - <a href="http://www.ncbi.nlm.nih.gov/pubmed/26201819" target="_blank" class="extlink">PubMed: 26201819</a>
+        </tr>
+	<tr>
+	  <td>PO temporal data from TAIR</td>
+          <td><a href="https://www.arabidopsis.org/download_files/Public_Data_Releases/TAIR_Data_20180331/po_temporal_gene_arabidopsis_tair.assoc.gz" target="_blank" class="extlink">TAIR</a>- Release 20180331</td>
+	  
     <%--
 
         <tr>
