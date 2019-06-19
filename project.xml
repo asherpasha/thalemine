@@ -39,13 +39,6 @@
 			<property name="src.data.dir" location="/DATA/thalemineData/genome/gff"/>
 		</source>
 
-		<!-- Unzip: ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/gene2pubmed.gz -->
-		<source name="pubmed-gene" type="pubmed-gene">
-			<property name="src.data.dir" location="/DATA/thalemineData/pubmed" />
-			<property name="pubmed.organisms" value="3702"/>
-			<property name="src.data.dir.includes" value="gene2pubmed"/>
-		</source>
-
 		<!-- 
 			This must be loaded before GFF data
 		http://purl.obolibrary.org/obo/go/go-basic.obo -->
@@ -60,19 +53,20 @@
 			<property name="ontologyPrefix" value="GO"/>
 		</source>
 
-		<!-- https://raw.githubusercontent.com/Planteome/plant-ontology/master/subsets/po-basic.obo -->
+		<!-- https://raw.githubusercontent.com/Planteome/plant-ontology/master/subsets/po-basic.obo
 		<source name="po" type="po">
 			<property name="src.data.file" location="/DATA/thalemineData/po/po-basic.obo"/>
 		</source>
 		
-		<!-- Unzip: https://www.arabidopsis.org/download_files/Public_Data_Releases/TAIR_Data_20180331/po_anatomy_gene_arabidopsis_tair.assoc.gz
-		https://www.arabidopsis.org/download_files/Public_Data_Releases/TAIR_Data_20180331/po_temporal_gene_arabidopsis_tair.assoc.gz -->
+		 Unzip: https://www.arabidopsis.org/download_files/Public_Data_Releases/TAIR_Data_20180331/po_anatomy_gene_arabidopsis_tair.assoc.gz
+		https://www.arabidopsis.org/download_files/Public_Data_Releases/TAIR_Data_20180331/po_temporal_gene_arabidopsis_tair.assoc.gz 
 		<source name="po-annotation" type="po-annotation">
 			<property name="src.data.dir" location="/DATA/thalemineData/po-annotation" />
 			<property name="dataSourceName" value="PO Annotation from TAIR"/>
 			<property name="ontologyPrefix" value="PO"/>
 		</source>
-
+		-->
+ 
 		<!--
 			UniProt SwissProt http://www.uniprot.org/uniprot/?format=xml&query=taxonomy%3A3702+AND+reviewed%3Ayes&compress=yes
 			File name: 3702_uniprot_sprot.xml
@@ -169,6 +163,13 @@
 			<property name="src.data.dir" location="/DATA/thalemineData/biogrid"/>
 			<property name="src.data.dir.includes" value="*psi25.xml"/>
 			<property name="biogrid.organisms" value="3702"/>
+		</source>
+
+		<!-- Unzip: ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/gene2pubmed.gz -->
+		<source name="pubmed-gene" type="pubmed-gene">
+			<property name="src.data.dir" location="/DATA/thalemineData/pubmed" />
+			<property name="pubmed.organisms" value="3702"/>
+			<property name="src.data.dir.includes" value="gene2pubmed"/>
 		</source>
 
 		<!--

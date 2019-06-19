@@ -113,6 +113,7 @@
           <td><a href="http://www.uniprot.org/uniprot/?format=xml&query=taxonomy%3A3702+AND+reviewed%3Ayes&compress=yes" target="_blank" class="extlink">UniProt</a>- Release 2019_04</td>
           <td>Camon et al - <a href="http://www.ncbi.nlm.nih.gov/pubmed/14681408" target="_blank" class="extlink">PubMed: 14681408</a></td>
         </tr>
+<%--
         <tr>
           <td rowspan="2" class="leftcol"><h2><p>Plant Ontology</p></h2></td>
           <td>PO anatomy data from TAIR</td>
@@ -122,15 +123,14 @@
 	<tr>
 	  <td>PO temporal data from TAIR</td>
           <td><a href="https://www.arabidopsis.org/download_files/Public_Data_Releases/TAIR_Data_20180331/po_temporal_gene_arabidopsis_tair.assoc.gz" target="_blank" class="extlink">TAIR</a>- Release 20180331</td>
-	  
-    <%--
+	</tr>  
 
         <tr>
           <td>InterPro domains to GO terms</td>
           <td><a href="http://www.ebi.ac.uk/interpro" target="_blank" class="extlink">InterPro</a>(from <a href="http://www.geneontology.org" target="_blank" class="extlink">Gene Ontology Site</a>)</td>
           <td>Mulder et al - <a href="http://www.ncbi.nlm.nih.gov/pubmed/17202162" target="_blank" class="extlink">PubMed: 17202162</a></td>
         </tr>
-    --%>
+--%>
 
         <tr>
           <td rowspan="2" class="leftcol"><p><h2>Interactions</p><h2></td>

@@ -19,20 +19,18 @@ export GRADLE_OPTS="-server -Dorg.gradle.daemon=false -Xms512m -Xmx2g -XX:+UsePa
 ./gradlew integrate -Psource=so
 ./gradlew integrate -Psource=bar-ncbi-fasta
 ./gradlew integrate -Psource=bar-tair-gff
-./gradlew integrate -Psource=pubmed-gene
 ./gradlew integrate -Psource=go
 ./gradlew integrate -Psource=go-annotation
-./gradlew integrate -Psource=po
-./gradlew integrate -Psource=po-annotation
 ./gradlew integrate -Psource=uniprot
 ./gradlew integrate -Psource=uniprot-fasta
 ./gradlew integrate -Psource=uniprot-keywords
+./gradlew integrate -Psource=panther
 ./gradlew integrate -Psource=interpro
 ./gradlew integrate -Psource=protein2ipr
 ./gradlew integrate -Psource=generif
-./gradlew integrate -Psource=panther
 ./gradlew integrate -Psource=psi-intact
 ./gradlew integrate -Psource=biogrid
+./gradlew integrate -Psource=pubmed-gene
 ./gradlew integrate -Psource=update-publications
 ./gradlew integrate -Psource=entrez-organism
 

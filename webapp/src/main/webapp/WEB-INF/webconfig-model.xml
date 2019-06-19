@@ -278,11 +278,13 @@
 	             types="Gene"/>
 
 <!-- Expression -->
+<!--
     <reportdisplayer javaClass="org.intermine.bio.web.displayer.PlantOntologyDisplayer"
                      jspName="model/plantOntologyDisplayer.jsp"
                      replacesFields="poAnnotation,ontologyAnnotations"
                      placement="Expression"
                      types="Gene"/>
+-->
 
     <reportdisplayer javaClass="org.thalemine.web.displayer.BarEfpBrowserDisplayer"
                      jspName="model/eFPBrowserDisplayer.jsp"
