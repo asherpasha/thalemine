@@ -69,7 +69,7 @@
                 <a href="http://www.uniprot.org/uniprot/?format=xml&query=taxonomy%3A3702+AND+reviewed%3Ayes&compress=yes"
                    target="_blank" class="extlink">Swiss-Prot</a>- Release 2019_04
             </td>
-            <td>UniProt Consortium - <a href="http://www.ncbi.nlm.nih.gov/pubmed/17142230" target="_blank"
+            <td rowspan="2">UniProt Consortium - <a href="http://www.ncbi.nlm.nih.gov/pubmed/17142230" target="_blank"
                                         class="extlink">PubMed: 17142230</a></td>
         </tr>
         <tr>
@@ -78,8 +78,6 @@
                 <a href="http://www.uniprot.org/uniprot/?format=xml&query=taxonomy%3A3702+AND+reviewed%3Ano&compress=yes"
                    target="_blank" class="extlink">TrEMBL</a>- Release 2019_04
             </td>
-            <td>UniProt Consortium - <a href="http://www.ncbi.nlm.nih.gov/pubmed/17142230" target="_blank"
-                                        class="extlink">PubMed: 17142230</a></td>
         </tr>
 
         <tr>
@@ -158,6 +156,12 @@
           <td>Goda et al., 2008 - <a href="http://www.ncbi.nlm.nih.gov/pubmed/18419781" target="_blank" class="extlink">PubMed: 18419781</a></td>
         </tr>
         --%>
+	<tr>
+	  <td class="leftcol"><p><h2>Co-Expression</h2></p></td>
+	  <td>Co-regulated gene relationships deduced from microarray and RNA-seq data via ATTED-II web services</td>
+	  <td><a href="http://atted.jp/help/API.shtml" target="_blank" class="extlink">ATTED-II Co-expression</a>- realtime</td>
+	  <td>Obayashi et al., 2014 - <a href="http://www.ncbi.nlm.nih.gov/pubmed/24334350" target="_blank" class="extlink">PubMed: 24334350</a></td>
+	</tr>
         <tr>
             <td rowspan="3" class="leftcol">
                 <h2><p>Publications</p></h2>

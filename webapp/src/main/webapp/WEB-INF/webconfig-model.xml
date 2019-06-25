@@ -291,6 +291,12 @@
                      replacesFields=""
                      placement="Expression"
                      types="Gene"/>
+    
+    <reportdisplayer javaClass="org.thalemine.web.displayer.AttedDisplayer"
+                     jspName="model/AttedDisplayer.jsp"
+                     replacesFields=""
+                     placement="Expression"
+                     types="Gene"/>
 
 <!-- HOMOLOGY -->
 
