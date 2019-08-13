@@ -69,8 +69,7 @@
                 <a href="http://www.uniprot.org/uniprot/?format=xml&query=taxonomy%3A3702+AND+reviewed%3Ayes&compress=yes"
                    target="_blank" class="extlink">Swiss-Prot</a>- Release 2019_04
             </td>
-            <td rowspan="2">UniProt Consortium - <a href="http://www.ncbi.nlm.nih.gov/pubmed/17142230" target="_blank"
-                                        class="extlink">PubMed: 17142230</a></td>
+            <td rowspan="2">UniProt Consortium - <a href="http://www.ncbi.nlm.nih.gov/pubmed/17142230" target="_blank" class="extlink">PubMed: 17142230</a></td>
         </tr>
         <tr>
             <td>Computationally analysed records, enriched with automatic annotation</td>
@@ -84,8 +83,7 @@
             <td>Protein family and domain assignments to proteins</td>
             <td><a href="ftp://ftp.ebi.ac.uk/pub/databases/interpro/interpro.xml.gz" target="_blank" class="extlink">InterPro</a>- Release v74.0
             </td>
-            <td>Mulder et al - <a href="http://www.ncbi.nlm.nih.gov/pubmed/17202162" target="_blank" class="extlink">PubMed:
-                17202162</a></td>
+            <td>Mitchell et al., 2019 - <a href="http://www.ncbi.nlm.nih.gov/pubmed/30398656" target="_blank" class="extlink">PubMed: 30398656</a></td>
         </tr>
 
         <tr>
@@ -109,7 +107,7 @@
         <tr>
           <td>Several electronic and manual GO annotation methods utilized by UniProt</td>
           <td><a href="http://www.uniprot.org/uniprot/?format=xml&query=taxonomy%3A3702+AND+reviewed%3Ayes&compress=yes" target="_blank" class="extlink">UniProt</a>- Release 2019_04</td>
-          <td>Camon et al - <a href="http://www.ncbi.nlm.nih.gov/pubmed/14681408" target="_blank" class="extlink">PubMed: 14681408</a></td>
+          <td>UniProt Consortium - <a href="http://www.ncbi.nlm.nih.gov/pubmed/17142230" target="_blank" class="extlink">PubMed: 17142230</a></td>
         </tr>
 <%--
         <tr>
@@ -178,13 +176,12 @@
             <td>Publications from InterPro</td>
             <td><a href="ftp://ftp.ebi.ac.uk/pub/databases/interpro/interpro.xml.gz" target="_blank" class="extlink">InterPro</a>- Release v74.0
             </td>
-            <td>Mulder et al - <a href="http://www.ncbi.nlm.nih.gov/pubmed/17202162" target="_blank" class="extlink">PubMed:
-                17202162</a></td>
+            <td>Mitchell et al., 2019 - <a href="http://www.ncbi.nlm.nih.gov/pubmed/30398656" target="_blank" class="extlink">PubMed: 30398656</a></td>
         </tr>
         <tr>
             <td>Publications from NCBI</td>
             <td><a href="ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/gene2pubmed.gz" target="_blank" class="extlink">NCBI</a>- Downloaded 20190614</td>
-            <td>Magrane et al., 2011 - <a href="http://www.ncbi.nlm.nih.gov/pubmed/21447597" target="_blank" class="extlink">PubMed: 21447597</a></td>
+            <td>Maglott et al., 2007 - <a href="https://www.ncbi.nlm.nih.gov/pubmed/17148475" target="_blank" class="extlink">PubMed: 17148475</a></td>
         </tr>
         <tr>
             <td class="leftcol">
@@ -192,7 +189,7 @@
             </td>
             <td>Concise phrase describing gene function and publication associated with NCBI Gene records</td>
             <td><a href="ftp://ftp.ncbi.nlm.nih.gov/gene/GeneRIF/generifs_basic.gz" target="_blank" class="extlink">NCBI</a>- Downloaded 20190612</td>
-            <td>Magrane et al., 2011 - <a href="http://www.ncbi.nlm.nih.gov/pubmed/21447597" target="_blank" class="extlink">PubMed: 21447597</a></td>
+            <td>Maglott et al., 2007 - <a href="https://www.ncbi.nlm.nih.gov/pubmed/17148475" target="_blank" class="extlink">PubMed: 17148475</a></td>
         </tr>
          
         <%--

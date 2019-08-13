@@ -53,7 +53,7 @@ export GRADLE_OPTS="-server -Dorg.gradle.daemon=false -Xms512m -Xmx2g -XX:+UsePa
 ./gradlew postProcess -Pprocess=create-search-index
 
 # Might have to build user database
-./gradlew buildUserDB
+#./gradlew buildUserDB
 ./gradlew cargoRedeployRemote
 
 
