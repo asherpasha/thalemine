@@ -26,7 +26,7 @@
 <div id="atted_displayercontainer"></div>
    <script type="text/javascript">
       var id = "${AGI}";
-      var webapp_url = "http://bar.utoronto.ca/thalemine";
+      var webapp_url = "https://bar.utoronto.ca/thalemine";
       var attedcallback = function(values) {
       	var options = {
              type: 'table',

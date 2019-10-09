@@ -62,8 +62,8 @@
       <div id="eFPimage"></div>
   </div>
   <div id="powerby">
-      <a onmouseout="this.style.backgroundColor='white';" onmouseover="this.style.backgroundColor='#f1f1d1';" title="BAR Webservices" target="_blank" href="http://bar.utoronto.ca/webservices/">
-          Powered by <img border="0/" src="http://bar.utoronto.ca/ntools/bbc_logo_small.gif" height="15" width="15"> BAR Webservices
+      <a onmouseout="this.style.backgroundColor='white';" onmouseover="this.style.backgroundColor='#f1f1d1';" title="BAR Webservices" target="_blank" href="https://bar.utoronto.ca/webservices/">
+          Powered by <img border="0/" src="https://bar.utoronto.ca/ntools/bbc_logo_small.gif" height="15" width="15"> BAR Webservices
       </a>
   </div>
   <script type="text/javascript">
@@ -89,7 +89,7 @@
         }
 
         jQuery('#eFPimage_loading_progress').show();
-	// http://bar.utoronto.ca/webservices/efp_service/efp_service.php?request={"agi":"At1g04170","datasource":"Developmental_Map"}
+	// https://bar.utoronto.ca/webservices/efp_service/efp_service.php?request={"agi":"At1g04170","datasource":"Developmental_Map"}
         //var req_url = bar_eFPBrowser_url + "?locus=" + agi + "&source=" + datasource;
         var req_url = bar_eFPBrowser_url + '?request={"agi":"' + agi + '","datasource":"' + datasource + '"}';
         var request = new XMLHttpRequest();
