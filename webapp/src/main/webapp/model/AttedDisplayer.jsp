@@ -15,7 +15,7 @@
 </div>
 
 <%-- TODO JCVI: Change the link here to your displayer --%>
-<script charset="utf-8" type="text/javascript" src="js/atted-displayer-1.2.0.min.js"></script>
+<script charset="utf-8" type="text/javascript" src="js/atted-displayer-1.2.0.js"></script>
 
 <%-- Comment this out because it changes the formatting of the whole report page relative to the rest of the site --%>
 <%--<link rel="stylesheet" type="text/css" href="${WEB_PROPERTIES['head.cdn.location']}/css/bootstrap/2.3.2/css/bootstrap.min.css">--%>
@@ -63,7 +63,7 @@
             cutoff: 20,
             guarantee: 10,
             service: webapp_url + "/service",
-            atted: "https://apps.araport.org/proxy/atted/API/coex",
+            atted: "https://bar.utoronto.ca/araport/proxy/bar_thalemine_atted.php?data=",
             accessToken: "na"
             }
       var displayer = new AttedDisplayer(opts,attedcallback,attedqueryhook);
