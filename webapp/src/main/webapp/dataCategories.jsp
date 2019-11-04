@@ -43,7 +43,7 @@
             <td>TAIR10 Genome assembly (5 chromosomes plus chloroplast and mitochondrial assemblies)</td>
             <td>
                 <a href="ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/735/GCF_000001735.4_TAIR10.1/GCF_000001735.4_TAIR10.1_genomic.fna.gz"
-                   target="_blank" class="extlink">NCBI</a>- Release TAIR10 (2019/02/14)
+                   target="_blank" class="extlink">NCBI</a>- Release TAIR10 (2018/04/06)
             </td>
             <td>Arabidopsis Genome Initiative - <a href="http://www.ncbi.nlm.nih.gov/pubmed/11130711" target="_blank"
                                                    class="extlink">PubMed: 11130711</a>
@@ -67,7 +67,7 @@
             <td>High-quality, manually annotated, non-redundant protein sequence database.</td>
             <td>
                 <a href="http://www.uniprot.org/uniprot/?format=xml&query=taxonomy%3A3702+AND+reviewed%3Ayes&compress=yes"
-                   target="_blank" class="extlink">Swiss-Prot</a>- Release 2019_04
+                   target="_blank" class="extlink">Swiss-Prot</a>- Release 2019_09
             </td>
             <td rowspan="2">UniProt Consortium - <a href="http://www.ncbi.nlm.nih.gov/pubmed/17142230" target="_blank" class="extlink">PubMed: 17142230</a></td>
         </tr>
@@ -75,13 +75,13 @@
             <td>Computationally analysed records, enriched with automatic annotation</td>
             <td>
                 <a href="http://www.uniprot.org/uniprot/?format=xml&query=taxonomy%3A3702+AND+reviewed%3Ano&compress=yes"
-                   target="_blank" class="extlink">TrEMBL</a>- Release 2019_04
+                   target="_blank" class="extlink">TrEMBL</a>- Release 2019_09
             </td>
         </tr>
 
         <tr>
             <td>Protein family and domain assignments to proteins</td>
-            <td><a href="ftp://ftp.ebi.ac.uk/pub/databases/interpro/interpro.xml.gz" target="_blank" class="extlink">InterPro</a>- Release v74.0
+            <td><a href="ftp://ftp.ebi.ac.uk/pub/databases/interpro/interpro.xml.gz" target="_blank" class="extlink">InterPro</a>- Release v76.0
             </td>
             <td>Mitchell et al., 2019 - <a href="http://www.ncbi.nlm.nih.gov/pubmed/30398656" target="_blank" class="extlink">PubMed: 30398656</a></td>
         </tr>
@@ -100,13 +100,13 @@
         <tr>
           <td rowspan="2" class="leftcol"><h2><p>Gene Ontology</p></h2></td>
           <td>GO annotations from Gene Ontology</td>
-          <td><a href="http://current.geneontology.org/annotations/tair.gaf.gz" target="_blank" class="extlink">Gene Ontology</a>- Release 20190509</td>
+          <td><a href="http://current.geneontology.org/annotations/tair.gaf.gz" target="_blank" class="extlink">Gene Ontology</a>- Release 20191007</td>
           <td>Berardini et al., 2004 - <a href="http://www.ncbi.nlm.nih.gov/pubmed/15173566" target="_blank" class="extlink">PubMed: 15173566</a><br />
               Gene Ontology Consortium - <a href="http://www.ncbi.nlm.nih.gov/pubmed/10802651" target="_blank" class="extlink">PubMed:10802651</a></td>
         </tr>
         <tr>
           <td>Several electronic and manual GO annotation methods utilized by UniProt</td>
-          <td><a href="http://www.uniprot.org/uniprot/?format=xml&query=taxonomy%3A3702+AND+reviewed%3Ayes&compress=yes" target="_blank" class="extlink">UniProt</a>- Release 2019_04</td>
+          <td><a href="http://www.uniprot.org/uniprot/?format=xml&query=taxonomy%3A3702+AND+reviewed%3Ayes&compress=yes" target="_blank" class="extlink">UniProt</a>- Release 2019_09</td>
           <td>UniProt Consortium - <a href="http://www.ncbi.nlm.nih.gov/pubmed/17142230" target="_blank" class="extlink">PubMed: 17142230</a></td>
         </tr>
 <%--
@@ -131,12 +131,12 @@
         <tr>
           <td rowspan="2" class="leftcol"><p><h2>Interactions</p><h2></td>
           <td>Curated set of genetic and physical interactions for Arabidopsis thaliana</td>
-          <td><a href="https://downloads.thebiogrid.org/Download/BioGRID/Release-Archive/BIOGRID-3.5.172/BIOGRID-ORGANISM-3.5.172.psi25.zip" target="_blank" class="extlink">BioGRID</a>- Release 3.5.172</td>
+          <td><a href="https://downloads.thebiogrid.org/Download/BioGRID/Release-Archive/BIOGRID-3.5.178/BIOGRID-ORGANISM-3.5.178.psi25.zip" target="_blank" class="extlink">BioGRID</a>- Release 3.5.178</td>
           <td>Chatr-Aryamontri et al., 2014 - <a href="http://www.ncbi.nlm.nih.gov/pubmed/25428363">PubMed: 25428363</a></td>
         </tr>
         <tr>
           <td>Curated binary and complex protein-protein interactions for Arabidopsis thaliana</td>
-          <td><a href="ftp://ftp.ebi.ac.uk/pub/databases/IntAct/current/psi25/species/arath.zip" target="_blank" class="extlink">IntAct</a>- Downloaded 20190528</td>
+          <td><a href="ftp://ftp.ebi.ac.uk/pub/databases/IntAct/current/psi25/species/arath.zip" target="_blank" class="extlink">IntAct</a>- Downloaded 20191103</td>
           <td>Kerrien et al., 2012 - <a href="http://www.ncbi.nlm.nih.gov/pubmed/22121220">PubMed: 22121220</a></td>
         </tr>
 
@@ -166,7 +166,7 @@
             </td>
             <td>Curated associations between publications and genes from UniProt</td>
             <td><a href="http://www.uniprot.org/help/publications" target="_blank" class="extlink">UniProt</a>- Release
-                2019_04
+                2019_09
             </td>
             <td>UniProt Consortium - <a href="http://www.ncbi.nlm.nih.gov/pubmed/17142230" target="_blank"
                                         class="extlink">PubMed: 17142230</a></td>
@@ -174,13 +174,13 @@
         </tr>
         <tr>
             <td>Publications from InterPro</td>
-            <td><a href="ftp://ftp.ebi.ac.uk/pub/databases/interpro/interpro.xml.gz" target="_blank" class="extlink">InterPro</a>- Release v74.0
+            <td><a href="ftp://ftp.ebi.ac.uk/pub/databases/interpro/interpro.xml.gz" target="_blank" class="extlink">InterPro</a>- Release v76.0
             </td>
             <td>Mitchell et al., 2019 - <a href="http://www.ncbi.nlm.nih.gov/pubmed/30398656" target="_blank" class="extlink">PubMed: 30398656</a></td>
         </tr>
         <tr>
             <td>Publications from NCBI</td>
-            <td><a href="ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/gene2pubmed.gz" target="_blank" class="extlink">NCBI</a>- Downloaded 20190614</td>
+            <td><a href="ftp://ftp.ncbi.nlm.nih.gov/gene/DATA/gene2pubmed.gz" target="_blank" class="extlink">NCBI</a>- Downloaded 20191103</td>
             <td>Maglott et al., 2007 - <a href="https://www.ncbi.nlm.nih.gov/pubmed/17148475" target="_blank" class="extlink">PubMed: 17148475</a></td>
         </tr>
         <tr>
@@ -188,7 +188,7 @@
                 <h2><p>GeneRIF</p></h2>
             </td>
             <td>Concise phrase describing gene function and publication associated with NCBI Gene records</td>
-            <td><a href="ftp://ftp.ncbi.nlm.nih.gov/gene/GeneRIF/generifs_basic.gz" target="_blank" class="extlink">NCBI</a>- Downloaded 20190612</td>
+            <td><a href="ftp://ftp.ncbi.nlm.nih.gov/gene/GeneRIF/generifs_basic.gz" target="_blank" class="extlink">NCBI</a>- Downloaded 20191103</td>
             <td>Maglott et al., 2007 - <a href="https://www.ncbi.nlm.nih.gov/pubmed/17148475" target="_blank" class="extlink">PubMed: 17148475</a></td>
         </tr>
          

@@ -8,7 +8,6 @@
 export GRADLE_OPTS="-server -Dorg.gradle.daemon=false -Xms512m -Xmx2g -XX:+UseParallelGC -XX:SoftRefLRUPolicyMSPerMB=1 -XX:MaxHeapFreeRatio=99"
 
 # Clean
-#./gradlew clean -Dorg.gradle.project.release=$VER
 ./gradlew clean
 
 # BuildDB
@@ -21,6 +20,7 @@ export GRADLE_OPTS="-server -Dorg.gradle.daemon=false -Xms512m -Xmx2g -XX:+UsePa
 ./gradlew integrate -Psource=bar-tair-gff
 ./gradlew integrate -Psource=go
 ./gradlew integrate -Psource=go-annotation
+
 ./gradlew integrate -Psource=uniprot
 ./gradlew integrate -Psource=uniprot-fasta
 ./gradlew integrate -Psource=uniprot-keywords
@@ -32,11 +32,10 @@ export GRADLE_OPTS="-server -Dorg.gradle.daemon=false -Xms512m -Xmx2g -XX:+UsePa
 ./gradlew integrate -Psource=biogrid
 ./gradlew integrate -Psource=pubmed-gene
 ./gradlew integrate -Psource=update-publications
+
 ./gradlew integrate -Psource=entrez-organism
 
 # Run all post processes
-#./gradlew postProcess
-
 ./gradlew postProcess -Pprocess=create-references
 ./gradlew postProcess -Pprocess=make-spanning-locations
 ./gradlew postProcess -Pprocess=create-chromosome-locations-and-lengths
