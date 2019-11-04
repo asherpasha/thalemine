@@ -118,7 +118,7 @@ jQuery(document).ready(function () {
 </script>
 
 <div id="protocols" style="display: none">
-<link rel="stylesheet" type="text/css" href="${WEB_PROPERTIES['head.cdn.location']}/js/intermine/im-tables/latest/imtables.css">
+<%-- No longer updated! <link rel="stylesheet" type="text/css" href="${WEB_PROPERTIES['head.cdn.location']}/js/intermine/im-tables/latest/main.css"> --%>
 <!-- A place holder element in your page to hold the table -->
 <div id="query-container">
  <p class="apology">
