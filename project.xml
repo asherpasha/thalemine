@@ -47,10 +47,10 @@
 		</source>
 
 		<!-- http://current.geneontology.org/annotations/tair.gaf.gz -->
-		<source name="go-annotation" type="go-annotation">
+		<source name="bar-go-annotation" type="bar-go-annotation">
 			<property name="src.data.dir" location="/DATA/thalemineData/go-annotation" />
 			<property name="src.data.includes" value="tair.gaf" />
-			<property name="ontologyPrefix" value="GO"/>
+			<property name="bar-go-annotation.ontologyPrefix" value="GO"/>
 		</source>
 
 		<!--
@@ -124,11 +124,11 @@
 		</source>
 
 		<!-- Unzip file: ftp://ftp.ncbi.nlm.nih.gov/gene/GeneRIF/generifs_basic.gz -->
-		<source name="generif" type="generif">
+		<source name="bar-generif" type="bar-generif">
 			<property name="src.data.dir" location="/DATA/thalemineData/generif"/>
-			<property name="generif.organisms" value="3702"/>
-			<property name="generif.datasourcename" value="GeneRIF"/>
-			<property name="generif.datasetname" value="GeneRIF data set"/>
+			<property name="bar-generif.organisms" value="3702"/>
+			<property name="bar-generif.datasourcename" value="GeneRIF"/>
+			<property name="bar-generif.datasetname" value="GeneRIF data set"/>
 		</source>
 
 		<!-- Unzip Files: ftp://ftp.ebi.ac.uk/pub/databases/IntAct/current/psi25/species/arath.zip -->
