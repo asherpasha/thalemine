@@ -36,6 +36,7 @@
           <option value="Biotic_Stress">Biotic Stress</option>
           <option value="Biotic_Stress_II">Biotic Stress II</option>
           <option value="Chemical">Chemical</option>
+          <option value="DNA_Damage">DNA Damage</option>
           <option value="Development_RMA">Development RMA</option>
           <option value="Developmental_Map">Developmental Map</option>
           <option value="Developmental_Mutants">Developmental Mutants</option>
