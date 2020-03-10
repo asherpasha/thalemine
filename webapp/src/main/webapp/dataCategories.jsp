@@ -67,7 +67,7 @@
             <td>High-quality, manually annotated, non-redundant protein sequence database.</td>
             <td>
                 <a href="http://www.uniprot.org/uniprot/?format=xml&query=taxonomy%3A3702+AND+reviewed%3Ayes&compress=yes"
-                   target="_blank" class="extlink">Swiss-Prot</a>- Release 2019_09
+                   target="_blank" class="extlink">Swiss-Prot</a>- Release 2019_11
             </td>
             <td rowspan="2">UniProt Consortium - <a href="http://www.ncbi.nlm.nih.gov/pubmed/17142230" target="_blank" class="extlink">PubMed: 17142230</a></td>
         </tr>
@@ -75,7 +75,7 @@
             <td>Computationally analysed records, enriched with automatic annotation</td>
             <td>
                 <a href="http://www.uniprot.org/uniprot/?format=xml&query=taxonomy%3A3702+AND+reviewed%3Ano&compress=yes"
-                   target="_blank" class="extlink">TrEMBL</a>- Release 2019_09
+                   target="_blank" class="extlink">TrEMBL</a>- Release 2019_11
             </td>
         </tr>
 
@@ -166,7 +166,7 @@
             </td>
             <td>Curated associations between publications and genes from UniProt</td>
             <td><a href="http://www.uniprot.org/help/publications" target="_blank" class="extlink">UniProt</a>- Release
-                2019_09
+                2019_11
             </td>
             <td>UniProt Consortium - <a href="http://www.ncbi.nlm.nih.gov/pubmed/17142230" target="_blank"
                                         class="extlink">PubMed: 17142230</a></td>
