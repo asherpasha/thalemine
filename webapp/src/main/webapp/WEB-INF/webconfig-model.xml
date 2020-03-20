@@ -8,8 +8,6 @@
   <class className="org.intermine.model.bio.Homologue">
     <fields>
       <fieldconfig fieldExpr="gene.primaryIdentifier" label="Gene ID"/>
-      <fieldconfig fieldExpr="homologue.primaryIdentifier" label="Homologue DB Identifier"/>
-      <fieldconfig fieldExpr="homologue.organism.shortName" label="Homologue organism"/>
       <fieldconfig fieldExpr="type"/>
     </fields>
   </class>
@@ -92,49 +90,6 @@
     </fields>
   </class>
 
-  <class className="org.intermine.model.bio.Generif" label="GeneRIF (Gene Reference into Function)" >
-    <fields>
-      <fieldconfig fieldExpr="annotation" />
-      <fieldconfig fieldExpr="timeStamp" label="last updated" showInSummary="false" showInInlineCollection="false" />
-      <fieldconfig fieldExpr="organism.shortName" label="Organism" showInInlineCollection="false" />
-      <fieldconfig fieldExpr="gene.symbol" label="Gene" showInInlineCollection="false" />
-      <fieldconfig fieldExpr="publication.pubMedId" label="PubMed Id" />
-    </fields>
-  </class>
-
-  <class className="org.intermine.model.bio.Ontology">
-    <fields>
-      <fieldconfig fieldExpr="name"/>
-    </fields>
-  </class>
-
-  <class className="org.intermine.model.bio.OntologyTerm">
-    <headerconfig>
-      <titles>
-      <title mainTitles="identifier|name" subTitles="ontology.name" />
-      </titles>
-    </headerconfig>
-    <fields>
-      <fieldconfig fieldExpr="identifier"/>
-      <fieldconfig fieldExpr="name"/>
-      <fieldconfig fieldExpr="description" doNotTruncate="true" />
-    </fields>
-  </class>
-
-  <class className="org.intermine.model.bio.OntologyRelation">
-    <fields>
-      <fieldconfig fieldExpr="relationship"/>
-      <fieldconfig fieldExpr="parentTerm.identifier"/>
-      <fieldconfig fieldExpr="childTerm.identifier"/>
-    </fields>
-  </class>
-
-  <class className="org.intermine.model.bio.OntologyTermSynonym">
-    <fields>
-      <fieldconfig fieldExpr="name"/>
-      <fieldconfig fieldExpr="type"/>
-    </fields>
-  </class>
 
   <class className="org.intermine.model.bio.Organism">
     <headerconfig>
@@ -145,59 +100,6 @@
     <fields>
       <fieldconfig fieldExpr="name"/>
       <fieldconfig fieldExpr="taxonId" />
-    </fields>
-  </class>
-
-  <class className="org.intermine.model.bio.Protein">
-    <inlinelist>
-      <table path="synonyms.value" showLinksToObjects="true" />
-    </inlinelist>
-    <fields>
-      <fieldconfig fieldExpr="primaryIdentifier"/>
-      <fieldconfig fieldExpr="primaryAccession"/>
-      <fieldconfig fieldExpr="organism.name"/>
-      <fieldconfig fieldExpr="length" displayer="/model/sequenceShortDisplayerWithField.jsp" />
-    </fields>
-  </class>
-
-  <class className="org.intermine.model.bio.Interaction">
-    <fields>
-      <fieldconfig fieldExpr="participant1.primaryIdentifier" />
-      <fieldconfig fieldExpr="participant2.primaryIdentifier" />
-    </fields>
-  </class>
-
-  <class className="org.intermine.model.bio.InteractionExperiment">
-    <fields>
-      <fieldconfig fieldExpr="name"/>
-      <fieldconfig fieldExpr="description"/>
-    </fields>
-  </class>
-
-  <class className="org.intermine.model.bio.InteractionTerm">
-    <fields>
-      <fieldconfig fieldExpr="identifier"/>
-      <fieldconfig fieldExpr="name"/>
-    </fields>
-  </class>
-
-  <class className="org.intermine.model.bio.Publication">
-    <headerconfig>
-  <titles>
-    <title mainTitles="title" />
- </titles>
-    </headerconfig>
-    <inlinelist>
-      <table path="authors.name" showLinksToObjects="true" />
-    </inlinelist>
-    <fields>
-      <fieldconfig fieldExpr="firstAuthor"/>
-      <fieldconfig fieldExpr="title"/>
-      <fieldconfig fieldExpr="year"/>
-      <fieldconfig fieldExpr="journal"/>
-      <fieldconfig fieldExpr="volume"/>
-      <fieldconfig fieldExpr="pages"/>
-      <fieldconfig fieldExpr="pubMedId"/>
     </fields>
   </class>
 
@@ -254,29 +156,6 @@
                      replacesFields="overlappingFeatures"
                      placement="Genomics"
                      types="SequenceFeature"/>
-
-<!-- Proteins -->
-    <reportdisplayer javaClass="org.intermine.bio.web.displayer.UniProtCommentsDisplayer"
-                     jspName="model/uniProtCommentsDisplayer.jsp"
-                     replacesFields=""
-                     placement="Proteins"
-	             types="Gene,Protein"/>
-
-<!-- Function -->
-    <reportdisplayer javaClass="org.intermine.bio.web.displayer.GeneOntologyDisplayer"
-                     jspName="model/geneOntologyDisplayer.jsp"
-                     replacesFields="goAnnotation,ontologyAnnotations"
-                     placement="Function"
-                     types="Gene"/>
-
-
-<!-- Interactions -->
-    <reportdisplayer javaClass="org.intermine.bio.web.displayer.CytoscapeNetworkDisplayer"
-	             jspName="model/cytoscapeNetworkDisplayer.jsp"
-	             replacesFields="interactions"
-	             placement="Interactions"
-	             types="Gene"/>
-
 <!-- Expression -->
 <!--
     <reportdisplayer javaClass="org.intermine.bio.web.displayer.PlantOntologyDisplayer"
@@ -286,25 +165,8 @@
                      types="Gene"/>
 -->
 
-    <reportdisplayer javaClass="org.thalemine.web.displayer.BarEfpBrowserDisplayer"
-                     jspName="model/eFPBrowserDisplayer.jsp"
-                     replacesFields=""
-                     placement="Expression"
-                     types="Gene"/>
-    
-    <reportdisplayer javaClass="org.thalemine.web.displayer.AttedDisplayer"
-                     jspName="model/AttedDisplayer.jsp"
-                     replacesFields=""
-                     placement="Expression"
-                     types="Gene"/>
 
 <!-- HOMOLOGY -->
-
-    <reportdisplayer javaClass="org.thalemine.web.displayer.PhytomineOrthologDisplayer"
-                     jspName="model/phytomineOrthologDisplayer.jsp"
-                     replacesFields=""
-                     placement="Homology"
-                     types="Gene"/>
 	
   </reportdisplayers>
 
@@ -326,110 +188,6 @@
                       constraints="organism.name=[Organism]"
                       views="primaryIdentifier, symbol, secondaryIdentifier, organism.name, chromosome.primaryIdentifier,
 		      chromosomeLocation.start, chromosomeLocation.end, chromosomeLocation.strand"/>
-
-	<enrichmentwidgetdisplayer id="publication_enrichment"
-                                 title="Publication Enrichment"
-                                 description="Publications enriched for genes in this list."
-                                 label="Publication"
-                                 startClass="Gene"
-                                 startClassDisplay="primaryIdentifier"
-                                 enrich="publications.title"
-                                 enrichIdentifier="publications.pubMedId"
-                                 constraints="organism.name=[list],primaryIdentifier != null"
-                                 typeClass="Gene"
-                                 views="secondaryIdentifier, symbol, organism.name,
-                                       publications.title, publications.firstAuthor,
-                                       publications.journal, publications.year, publications.pubMedId"
-                                 externalLink="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;dopt=Abstract&amp;list_uids="/>
-
-      <enrichmentwidgetdisplayer id="go_enrichment_for_gene"
-                                 title="Gene Ontology Enrichment"
-                                 description="GO terms enriched for items in this list."
-                                 label="GO Term"
-                                 filterLabel="Ontology"
-                                 filters="biological_process,cellular_component,molecular_function"
-                                 startClass="Gene"
-                                 startClassDisplay="primaryIdentifier"
-                                 enrich="goAnnotation.ontologyTerm.parents.name"
-                                 enrichIdentifier="goAnnotation.ontologyTerm.parents.identifier"
-                                 constraints="goAnnotation.ontologyTerm.parents.namespace=[Ontology],organism.name=[list],
-                                              primaryIdentifier != null, goAnnotation.qualifier = null,
-                                              goAnnotation.ontologyTerm.parents.identifier != go:0008150,
-                                              goAnnotation.ontologyTerm.parents.identifier != go:0003674,
-                                              goAnnotation.ontologyTerm.parents.identifier != go:0005575"
-                                 typeClass="Gene"
-                                 views="primaryIdentifier, symbol, organism.name,
-                                       goAnnotation.ontologyTerm.identifier, goAnnotation.ontologyTerm.name,
-                                       goAnnotation.ontologyTerm.parents.identifier,goAnnotation.ontologyTerm.parents.name"
-                                 externalLink="http://amigo.geneontology.org/cgi-bin/amigo/term_details?term="
-                                 correctionCoefficient="org.intermine.bio.web.widget.GeneLenghtCorrectionCoefficient"/>
-
-      <enrichmentwidgetdisplayer id="protein_features"
-                                 title="UniProt Features"
-                                 description="UniProt features enriched for proteins in this list."
-                                 label="Feature"
-                                 startClass="Protein"
-                                 startClassDisplay="primaryIdentifier"
-                                 enrich="features.type"
-                                 enrichIdentifier="features.type"
-                                 constraints="organism.name=[list]"
-                                 typeClass="Protein"
-                                 views="primaryIdentifier, primaryAccession, organism.name,
-                                       features.feature.name, features.type,features.description,
-                                       features.begin, features.end"/>
-	    
-      <enrichmentwidgetdisplayer id="uniprot_keywords"
-                                 title="UniProt Keywords"
-                                 description="UniProt keywords enriched for proteins in this list."
-                                 label="Keyword"
-                                 startClass="Protein"
-                                 startClassDisplay="primaryIdentifier"
-                                 enrich="keywords.name"
-                                 constraints="organism.name=[list]"
-                                 typeClass="Protein"
-                                 views="primaryIdentifier, primaryAccession, organism.name,
-                                       keywords.name, keywords.description"/>
-
-
-      <enrichmentwidgetdisplayer id="prot_dom_enrichment_for_gene"
-                                 title="Protein Domain Enrichment"
-                                 description="Protein Domains enriched for items in this list."
-                                 label="Protein Domain"
-                                 startClass="Gene"
-                                 startClassDisplay="primaryIdentifier"
-                                 enrich="proteins.proteinDomainRegions.proteinDomain.name"
-                                 enrichIdentifier="proteins.proteinDomainRegions.proteinDomain.primaryIdentifier"
-                                 constraints="organism.name=[list]"
-                                 typeClass="Gene"
-                                 views="secondaryIdentifier,symbol,primaryIdentifier,organism.name,
-                                       proteins.proteinDomainRegions.proteinDomain.primaryIdentifier,proteins.proteinDomainRegions.proteinDomain.name"
-                                 externalLink="http://www.ebi.ac.uk/interpro/IEntry?ac="/>
-
-      <enrichmentwidgetdisplayer id="prot_dom_enrichment_for_protein"
-                                 title="Protein Domain Enrichment"
-                                 description="Protein Domains enriched for items in this list."
-                                 label="Protein Domain"
-                                 startClass="Protein"
-                                 startClassDisplay="primaryIdentifier"
-                                 enrich="proteinDomainRegions.proteinDomain.name"
-                                 enrichIdentifier="proteinDomainRegions.proteinDomain.primaryIdentifier"
-                                 constraints="organism.name=[list]"
-                                 typeClass="Protein"
-                                 views="primaryIdentifier,organism.name,proteinDomainRegions.proteinDomain.primaryIdentifier,
-                                       proteinDomainRegions.proteinDomain.name"
-                                 externalLink="http://www.ebi.ac.uk/interpro/entry/"/>
-	 
-	      <bagtabledisplayer id="orthologues" title="Orthologues" pathStrings="Gene.homologues.homologue.organism"
-                         description="Counts of genes in list with orthologues."
-                         displayFields="name"
-                         exportField="primaryIdentifier"
-                         typeClass="Gene"
-                         columnTitle="Genes"
-                         views="secondaryIdentifier, symbol, organism.shortName,
-                                homologues.homologue.primaryIdentifier,
-                                homologues.homologue.symbol,
-                                homologues.homologue.organism.shortName,
-                                homologues.type"/>
 
 </widgets>
 </webconfig>
