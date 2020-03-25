@@ -52,6 +52,14 @@
     </fields>
     <tabledisplayer src="/model/dataSourceShort.jsp"/>
   </class>
+  
+  <class className="org.intermine.model.bio.TAIR">
+    <fields>
+      <fieldconfig fieldExpr="computationalDescription" label="TAIR Computational Description" showInSummary="true" doNotTruncate="true"/>
+      <fieldconfig fieldExpr="curatorSummary" label="TAIR Curator Summary" showInSummary="true" doNotTruncate="true"/>
+      <fieldconfig fieldExpr="shortDescription" label="TAIR Short Description" showInSummary="true" doNotTruncate="true"/>
+    </fields>
+  </class>
 
   <class className="org.intermine.model.bio.Gene">
     <fields>

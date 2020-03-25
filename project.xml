@@ -27,6 +27,12 @@
 			<property name="src.data.dir" location="/DATA/thalemineData/genome/gff"/>
 		</source>
 
+		<source name="bar-tair-functional-descriptions" type="bar-tair-functional-descriptions">
+			<property name="src.data.dir" location="/DATA/thalemineData/tair"/>
+			<property name="bar-generif.datasourcename" value="TAIR"/>
+			<property name="bar-generif.datasetname" value="TAIR Functional Descriptions"/>
+		</source>
+
 		<!-- Organism information from NCBI -->
 		<source name="entrez-organism" type="entrez-organism">
 			<property name="src.data.file" location="organisms.xml"/>

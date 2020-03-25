@@ -5,20 +5,21 @@
 # Date: April 2019
 
 # Set version number. This is the thalemine.properties.20190419 file
-#export GRADLE_OPTS="-server -Dorg.gradle.daemon=false -Xms512m -Xmx2g -XX:+UseParallelGC -XX:SoftRefLRUPolicyMSPerMB=1 -XX:MaxHeapFreeRatio=99"
+export GRADLE_OPTS="-server -Dorg.gradle.daemon=false -Xms512m -Xmx2g -XX:+UseParallelGC -XX:SoftRefLRUPolicyMSPerMB=1 -XX:MaxHeapFreeRatio=99"
 
 # Clean
-#./gradlew clean
+./gradlew clean
 
 # BuildDB
-#./gradlew buildDB
+./gradlew buildDB
 
 # Load DATA
 #./gradlew integrate -Psource=psi-mi-ontology
 #./gradlew integrate -Psource=so
 
-#./gradlew integrate -Psource=bar-ncbi-fasta
-#./gradlew integrate -Psource=bar-tair-gff
+./gradlew integrate -Psource=bar-ncbi-fasta
+./gradlew integrate -Psource=bar-tair-gff
+./gradlew integrate -Psource=bar-tair-functional-descriptions
 
 #./gradlew integrate -Psource=go
 #./gradlew integrate -Psource=bar-go-annotation
