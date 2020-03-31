@@ -29,9 +29,16 @@
 
 		<source name="bar-tair-functional-descriptions" type="bar-tair-functional-descriptions">
 			<property name="src.data.dir" location="/DATA/thalemineData/tair"/>
-			<property name="bar-generif.datasourcename" value="TAIR"/>
-			<property name="bar-generif.datasetname" value="TAIR Functional Descriptions"/>
+			<property name="bar-tair-functional-descriptions.datasourcename" value="TAIR"/>
+			<property name="bar-tair-functional-descriptions.datasetname" value="TAIR Functional Descriptions"/>
 		</source>
+		
+		<source name="bar-tair-aliases" type="bar-tair-aliases">
+			<property name="src.data.dir" location="/DATA/thalemineData/tair"/>
+			<property name="bar-tair-aliases.datasourcename" value="TAIR"/>
+			<property name="bar-tair-aliases.datasetname" value="TAIR Gene Alias"/>
+		</source>
+
 
 		<!-- Organism information from NCBI -->
 		<source name="entrez-organism" type="entrez-organism">

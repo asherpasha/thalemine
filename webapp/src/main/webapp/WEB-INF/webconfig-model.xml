@@ -68,6 +68,7 @@
       <fieldconfig fieldExpr="tairComputationalDescription" label="TAIR Computational Description" showInSummary="true" doNotTruncate="true"/>
       <fieldconfig fieldExpr="tairCuratorSummary" label="TAIR Curator Summary" showInSummary="true" doNotTruncate="true"/>
       <fieldconfig fieldExpr="tairShortDescription" label="TAIR Short Description" showInSummary="true" doNotTruncate="true"/>
+      <fieldconfig fieldExpr="tairAliases" label="TAIR Aliases" showInSummary="true" doNotTruncate="true"/>
     </fields>
   </class>
 
