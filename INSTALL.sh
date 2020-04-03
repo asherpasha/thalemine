@@ -35,7 +35,7 @@ export GRADLE_OPTS="-server -Dorg.gradle.daemon=false -Xms512m -Xmx2g -XX:+UsePa
 #./gradlew integrate -Psource=biogrid
 #./gradlew integrate -Psource=pubmed-gene
 #./gradlew integrate -Psource=update-publications
-#./gradlew integrate -Psource=entrez-organism
+./gradlew integrate -Psource=entrez-organism
 
 # Run all post processes
 ./gradlew postProcess -Pprocess=create-references
