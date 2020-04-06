@@ -18,6 +18,8 @@ export GRADLE_OPTS="-server -Dorg.gradle.daemon=false -Xms512m -Xmx2g -XX:+UsePa
 ./gradlew integrate -Psource=so
 ./gradlew integrate -Psource=bar-ncbi-fasta
 ./gradlew integrate -Psource=bar-tair-gff
+./gradlew integrate -Psource=bar-tair-functional-descriptions
+./gradlew integrate -Psource=bar-tair-aliases
 ./gradlew integrate -Psource=go
 ./gradlew integrate -Psource=bar-go-annotation
 

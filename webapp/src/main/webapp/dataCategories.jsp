@@ -90,13 +90,26 @@
           <td rowspan="2" class="leftcol"><h2><p>Homology</p></h2></td>
           <td>Orthologue and paralogue relationships based on the inferred speciation and gene duplication events in the phylogenetic tree.</td>
           <td><a href="ftp://ftp.pantherdb.org/ortholog/current_release/RefGenomeOrthologs.tar.gz" target="_blank" class="extlink">Panther</a>- Release 14.1</td>
-          <td>Mi et al - <a href="http://www.ncbi.nlm.nih.gov/pubmed/23193289 " target="_blank" class="extlink">PubMed: 23193289</a></td>
+          <td>Mi et al - <a href="http://www.ncbi.nlm.nih.gov/pubmed/23193289" target="_blank" class="extlink">PubMed: 23193289</a></td>
         </tr>
         <tr>
           <td>Phytozome Homologs generated with InParanoid</td>
           <td><a href="http://phytozome.jgi.doe.gov/phytomine" target="_blank" class="extlink">Phytozome</a>- realtime</td>
           <td>Goodstein et al - <a href="http://www.ncbi.nlm.nih.gov/pubmed/22110026" target="_blank" class="extlink">PubMed: 22110026</a></td>
         </tr>
+
+        <tr>
+          <td rowspan="2" class="leftcol"><h2><p>Curation</p></h2></td>
+          <td>Manually curated TAIR functional descriptions</td>
+          <td><a href="https://www.arabidopsis.org/download_files/Public_Data_Releases/TAIR_Data_20181231/Araport11_functional_descriptions_20181231.txt.gz" target="_blank" class="extlink">TAIR</a>- Release 20181231</td>
+          <td>Huala et al - <a href="https://www.ncbi.nlm.nih.gov/pubmed/11125061" target="_blank" class="extlink">PubMed: 11125061</a></td>
+        </tr>
+        <tr>
+          <td>Manually curated TAIR gene aliases</td>
+          <td><a href="https://www.arabidopsis.org/download_files/Public_Data_Releases/TAIR_Data_20181231/gene_aliases_20181231.txt.gz" target="_blank" class="extlink">TAIR</a>- Release 20181231</td>
+          <td>Huala et al - <a href="https://www.ncbi.nlm.nih.gov/pubmed/11125061" target="_blank" class="extlink">PubMed: 11125061</a></td>
+        </tr>
+
         <tr>
           <td rowspan="2" class="leftcol"><h2><p>Gene Ontology</p></h2></td>
           <td>GO annotations from Gene Ontology</td>
@@ -191,16 +204,6 @@
             <td><a href="ftp://ftp.ncbi.nlm.nih.gov/gene/GeneRIF/generifs_basic.gz" target="_blank" class="extlink">NCBI</a>- Downloaded 20200121</td>
             <td>Maglott et al., 2007 - <a href="https://www.ncbi.nlm.nih.gov/pubmed/17148475" target="_blank" class="extlink">PubMed: 17148475</a></td>
         </tr>
-         
-        <%--
-        <tr>
-          <td class="leftcol"><h2><p>Pathways</p></h2></td>
-          <td>KEGG pathways - Wiring diagrams of molecular interactions, reactions, and relations</td>
-          <td><a href="http://www.kegg.jp/kegg/pathway.html" target="_blank" class="extlink">KEGG</a>Release 72.0</td>
-          <td>Kanehisa et al - <a href="http://www.ncbi.nlm.nih.gov/pubmed/24214961" target="_blank" class="extlink">PubMed: 24214961</a></td>
-        </tr>
-        --%>
     </table>
-
 </div>
 <!-- /dataCategories -->
