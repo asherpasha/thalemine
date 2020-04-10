@@ -8,20 +8,20 @@
 export GRADLE_OPTS="-server -Dorg.gradle.daemon=false -Xms512m -Xmx2g -XX:+UseParallelGC -XX:SoftRefLRUPolicyMSPerMB=1 -XX:MaxHeapFreeRatio=99"
 
 # Clean
-./gradlew clean
-
-# BuildDB
-./gradlew buildDB
-
-# Load DATA
-./gradlew integrate -Psource=psi-mi-ontology
-./gradlew integrate -Psource=so
-./gradlew integrate -Psource=bar-ncbi-fasta
-./gradlew integrate -Psource=bar-tair-gff
-./gradlew integrate -Psource=bar-tair-functional-descriptions
-./gradlew integrate -Psource=bar-tair-aliases
-./gradlew integrate -Psource=go
-./gradlew integrate -Psource=bar-go-annotation
+#./gradlew clean
+#
+## BuildDB
+#./gradlew buildDB
+#
+## Load DATA
+#./gradlew integrate -Psource=psi-mi-ontology
+#./gradlew integrate -Psource=so
+#./gradlew integrate -Psource=bar-ncbi-fasta
+#./gradlew integrate -Psource=bar-tair-gff
+#./gradlew integrate -Psource=bar-tair-functional-descriptions
+#./gradlew integrate -Psource=bar-tair-aliases
+#./gradlew integrate -Psource=go
+#./gradlew integrate -Psource=go-annotation
 
 ./gradlew integrate -Psource=uniprot
 ./gradlew integrate -Psource=uniprot-fasta

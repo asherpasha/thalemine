@@ -60,10 +60,10 @@
 		</source>
 
 		<!-- http://current.geneontology.org/annotations/tair.gaf.gz -->
-		<source name="bar-go-annotation" type="bar-go-annotation">
+		<source name="go-annotation" type="go-annotation">
 			<property name="src.data.dir" location="/DATA/thalemineData/go-annotation" />
 			<property name="src.data.includes" value="tair.gaf" />
-			<property name="bar-go-annotation.ontologyPrefix" value="GO"/>
+			<property name="ontologyPrefix" value="GO"/>
 		</source>
 
 		<!--
