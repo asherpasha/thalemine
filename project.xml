@@ -39,6 +39,19 @@
 			<property name="src.data.dir" location="/DATA/thalemineData/genome/gff"/>
 		</source>
 
+		<!-- The next tow sources are from TAIR Public data -->
+		<source name="bar-tair-functional-descriptions" type="bar-tair-functional-descriptions">
+			<property name="src.data.dir" location="/DATA/thalemineData/tair"/>
+			<property name="bar-tair-functional-descriptions.datasourcename" value="TAIR"/>
+			<property name="bar-tair-functional-descriptions.datasetname" value="TAIR Functional Descriptions"/>
+		</source>
+		
+		<source name="bar-tair-aliases" type="bar-tair-aliases">
+			<property name="src.data.dir" location="/DATA/thalemineData/tair"/>
+			<property name="bar-tair-aliases.datasourcename" value="TAIR"/>
+			<property name="bar-tair-aliases.datasetname" value="TAIR Gene Alias"/>
+		</source>
+
 		<!-- 
 			This must be loaded before GFF data
 		http://purl.obolibrary.org/obo/go/go-basic.obo -->
@@ -47,10 +60,10 @@
 		</source>
 
 		<!-- http://current.geneontology.org/annotations/tair.gaf.gz -->
-		<source name="bar-go-annotation" type="bar-go-annotation">
+		<source name="go-annotation" type="go-annotation">
 			<property name="src.data.dir" location="/DATA/thalemineData/go-annotation" />
 			<property name="src.data.includes" value="tair.gaf" />
-			<property name="bar-go-annotation.ontologyPrefix" value="GO"/>
+			<property name="ontologyPrefix" value="GO"/>
 		</source>
 
 		<!--
