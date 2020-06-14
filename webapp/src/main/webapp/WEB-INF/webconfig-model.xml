@@ -314,6 +314,7 @@
 
 <!-- widgets -->
 <widgets>
+	<!-- Bugged
       <graphdisplayer id="chromosome_distribution_for_gene"
                       title="Chromosome Distribution"
                       description="Actual: number of items in this list found on each chromosome.  Expected: given the total number of items on the chromosome and the number of items in this list, the number of items expected to be found on each chromosome."
@@ -330,7 +331,7 @@
                       constraints="organism.name=[Organism]"
                       views="primaryIdentifier, symbol, secondaryIdentifier, organism.name, chromosome.primaryIdentifier,
 		      chromosomeLocation.start, chromosomeLocation.end, chromosomeLocation.strand"/>
-
+	-->
 	<enrichmentwidgetdisplayer id="publication_enrichment"
                                  title="Publication Enrichment"
                                  description="Publications enriched for genes in this list."
