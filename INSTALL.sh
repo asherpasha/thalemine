@@ -7,7 +7,7 @@
 # Set version number. This is the thalemine.properties.20190419 file
 export GRADLE_OPTS="-server -Dorg.gradle.daemon=false -Xms512m -Xmx2g -XX:+UseParallelGC -XX:SoftRefLRUPolicyMSPerMB=1 -XX:MaxHeapFreeRatio=99"
 
-# Clean
+## Clean
 #./gradlew clean
 #
 ## BuildDB
@@ -36,21 +36,21 @@ export GRADLE_OPTS="-server -Dorg.gradle.daemon=false -Xms512m -Xmx2g -XX:+UsePa
 #./gradlew integrate -Psource=update-publications
 #./gradlew integrate -Psource=entrez-organism
 
-# Run all post processes
-./gradlew postProcess -Pprocess=create-references
-./gradlew postProcess -Pprocess=make-spanning-locations
-./gradlew postProcess -Pprocess=create-chromosome-locations-and-lengths
-./gradlew postProcess -Pprocess=create-intron-features
-./gradlew postProcess -Pprocess=create-intergenic-region-features
-./gradlew postProcess -Pprocess=transfer-sequences
-./gradlew postProcess -Pprocess=do-sources
-./gradlew postProcess -Pprocess=create-location-overlap-index
-./gradlew postProcess -Pprocess=create-overlap-view
-./gradlew postProcess -Pprocess=populate-child-features
-./gradlew postProcess -Pprocess=create-attribute-indexes
-./gradlew postProcess -Pprocess=summarise-objectstore
-./gradlew postProcess -Pprocess=create-autocomplete-index
-./gradlew postProcess -Pprocess=create-search-index
+## Run all post processes
+#./gradlew postProcess -Pprocess=create-references
+#./gradlew postProcess -Pprocess=make-spanning-locations
+#./gradlew postProcess -Pprocess=create-chromosome-locations-and-lengths
+#./gradlew postProcess -Pprocess=create-intron-features
+#./gradlew postProcess -Pprocess=create-intergenic-region-features
+#./gradlew postProcess -Pprocess=transfer-sequences
+#./gradlew postProcess -Pprocess=do-sources
+#./gradlew postProcess -Pprocess=create-location-overlap-index
+#./gradlew postProcess -Pprocess=create-overlap-view
+#./gradlew postProcess -Pprocess=populate-child-features
+#./gradlew postProcess -Pprocess=create-attribute-indexes
+#./gradlew postProcess -Pprocess=summarise-objectstore
+#./gradlew postProcess -Pprocess=create-autocomplete-index
+#./gradlew postProcess -Pprocess=create-search-index
 
 # Might have to build user database
 #./gradlew buildUserDB
