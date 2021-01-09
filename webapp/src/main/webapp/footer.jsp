@@ -114,7 +114,7 @@
     </ul>
     --%>
 
-    <p class="footer-copy">&copy; 2002 - 2019 Department of Genetics, University of Cambridge, Downing Street,<br />
+    <p class="footer-copy">&copy; 2002 - 2021 Department of Genetics, University of Cambridge, Downing Street,<br />
         Cambridge CB2 3EH, United Kingdom</p>
 
     <div style="clear:both"></div>
