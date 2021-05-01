@@ -1,8 +1,8 @@
 buildscript {
     repositories {
         mavenLocal()
-	jcenter()
-	mavenCentral()
+        jcenter()
+        mavenCentral()
     }
     dependencies {
         classpath group: 'org.intermine', name: 'plugin', version: System.getProperty("imVersion")
@@ -30,7 +30,7 @@ subprojects {
     jcenter()
     mavenCentral()
     maven {
-      url "https://clojars.org/repo"
+        url "https://clojars.org/repo"
     }
     maven {
         url 'http://www.ebi.ac.uk/intact/maven/nexus/content/repositories/ebi-repo/'
