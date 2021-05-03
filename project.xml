@@ -17,7 +17,7 @@
 		</source>
 
 		<!-- A. thaliana FASTA sequence from NCBI -->
-		<source name="bar-ncbi-fasta" type="bar-ncbi-fasta">
+		<source name="bar-ncbi-fasta" type="bar-ncbi-fasta" version="4.3.0">
 			<property name="fasta.loaderClassName" value="org.intermine.bio.dataconversion.BarNcbiFastaLoaderTask"/>
 			<property name="bar-ncbi-fasta.sequenceType" value="dna"/>
 			<property name="bar-ncbi-fasta.taxonId" value="3702"/>
@@ -30,7 +30,7 @@
 		</source>
 
 		<!-- GFF3 file from TAIR/Araport -->
-		<source name="bar-tair-gff" type="bar-tair-gff">
+		<source name="bar-tair-gff" type="bar-tair-gff" version="4.3.0">
 			<property name="gff3.taxonId" value="3702"/>
 			<property name="gff3.seqDataSourceName" value="TAIR"/>
 			<property name="gff3.seqClsName" value="Chromosome"/>
@@ -40,13 +40,13 @@
 		</source>
 
 		<!-- The next tow sources are from TAIR Public data -->
-		<source name="bar-tair-functional-descriptions" type="bar-tair-functional-descriptions">
+		<source name="bar-tair-functional-descriptions" type="bar-tair-functional-descriptions" version="4.3.0">
 			<property name="src.data.dir" location="/DATA/thalemineData/tair"/>
 			<property name="bar-tair-functional-descriptions.datasourcename" value="TAIR"/>
 			<property name="bar-tair-functional-descriptions.datasetname" value="TAIR Functional Descriptions"/>
 		</source>
 		
-		<source name="bar-tair-aliases" type="bar-tair-aliases">
+		<source name="bar-tair-aliases" type="bar-tair-aliases" version="4.3.0">
 			<property name="src.data.dir" location="/DATA/thalemineData/tair"/>
 			<property name="bar-tair-aliases.datasourcename" value="TAIR"/>
 			<property name="bar-tair-aliases.datasetname" value="TAIR Gene Alias"/>
@@ -71,7 +71,7 @@
 			File name: 3702_uniprot_sprot.xml
 			File name: 3702_uniprot_trembl.xml
 		-->
-		<source name="uniprot" type="uniprot" >
+		<source name="uniprot" type="uniprot" version="4.3.0">
 			<property name="uniprot.organisms" value="3702"/>
 			<property name="src.data.dir" location="/DATA/thalemineData/uniprot"/>
 			<property name="creatego" value="true"/>
@@ -137,7 +137,7 @@
 		</source>
 
 		<!-- Unzip file: ftp://ftp.ncbi.nlm.nih.gov/gene/GeneRIF/generifs_basic.gz -->
-		<source name="bar-generif" type="bar-generif">
+		<source name="bar-generif" type="bar-generif" version="4.3.0">
 			<property name="src.data.dir" location="/DATA/thalemineData/generif"/>
 			<property name="bar-generif.organisms" value="3702"/>
 			<property name="bar-generif.datasourcename" value="GeneRIF"/>
@@ -171,7 +171,7 @@
 		</source>
 
 		<!-- This will updated Publication added by UniProt souces -->
-		<source name="update-publications" type="update-publications" dump="true">
+		<source name="update-publications" type="update-publications">
 			<property name="src.data.file" location="publications.xml"/>
 		</source>
 
