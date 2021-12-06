@@ -1,7 +1,6 @@
 buildscript {
     repositories {
         mavenLocal()
-        jcenter()
         mavenCentral()
     }
     dependencies {
@@ -27,14 +26,12 @@ subprojects {
   
   repositories {
     mavenLocal()
-    jcenter()
     mavenCentral()
-    maven {
-        url "https://clojars.org/repo"
-    }
-    maven {
-        url 'http://www.ebi.ac.uk/intact/maven/nexus/content/repositories/ebi-repo/'
-    }
+    jcenter()
+    //maven {
+    //  url 'http://www.ebi.ac.uk/intact/maven/nexus/content/repositories/ebi-repo/'
+    //}
+    maven { url 'https://clojars.org/repo' }
   }
 
   dependencies {
