@@ -80,7 +80,8 @@
     }
 
     function loadeFPimage(ds) {
-        var bar_eFPBrowser_url = "https://bar.utoronto.ca/webservices/efp_service/efp_service.php";
+        // var bar_eFPBrowser_url = "https://bar.utoronto.ca/webservices/efp_service/efp_service.php";
+        var bar_eFPBrowser_url = "https://bar.utoronto.ca/api_dev/efp_image/efp_arabidopsis/";
         var agi = jQuery('#agi').val();
         var datasource = ds || jQuery('#datasource').val();
         var img_not_available = "model/images/eFP_image_not_available.png";
@@ -92,7 +93,8 @@
         jQuery('#eFPimage_loading_progress').show();
 	// https://bar.utoronto.ca/webservices/efp_service/efp_service.php?request={"agi":"At1g04170","datasource":"Developmental_Map"}
         //var req_url = bar_eFPBrowser_url + "?locus=" + agi + "&source=" + datasource;
-        var req_url = bar_eFPBrowser_url + '?request={"agi":"' + agi + '","datasource":"' + datasource + '"}';
+	// https://bar.utoronto.ca/api_dev/efp_image/efp_arabidopsis/Developmental_Map/Absolute/At1g01010
+        var req_url = bar_eFPBrowser_url + datasource + "/Absolute/" + agi;
         var request = new XMLHttpRequest();
         request.open('GET', req_url, true);
         request.responseType = 'blob';
