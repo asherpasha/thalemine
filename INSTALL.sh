@@ -22,7 +22,7 @@ export GRADLE_OPTS="-server -Dorg.gradle.daemon=false -Xms512m -Xmx2g -XX:+UsePa
 #./gradlew integrate -Psource=bar-tair-aliases
 #./gradlew integrate -Psource=go
 #./gradlew integrate -Psource=go-annotation
-#
+
 #./gradlew integrate -Psource=uniprot
 #./gradlew integrate -Psource=uniprot-fasta
 #./gradlew integrate -Psource=uniprot-keywords
@@ -51,9 +51,9 @@ export GRADLE_OPTS="-server -Dorg.gradle.daemon=false -Xms512m -Xmx2g -XX:+UsePa
 ./gradlew postProcess -Pprocess=summarise-objectstore
 ./gradlew postProcess -Pprocess=create-autocomplete-index
 ./gradlew postProcess -Pprocess=create-search-index
-
-# Might have to build user database
-#./gradlew buildUserDB
+#
+## Might have to build user database
+##./gradlew buildUserDB
 ./gradlew cargoRedeployRemote
-
+#
 
