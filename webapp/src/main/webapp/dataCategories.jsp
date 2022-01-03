@@ -148,7 +148,7 @@
         <tr>
           <td rowspan="2" class="leftcol"><p><h2>Interactions</p><h2></td>
           <td>Curated set of genetic and physical interactions for Arabidopsis thaliana</td>
-          <td><a href="https://downloads.thebiogrid.org/Download/BioGRID/Release-Archive/BIOGRID-4.2.193/BIOGRID-ORGANISM-4.2.193.psi25.zip" target="_blank" class="extlink">BioGRID</a>- Release 4.2.193</td>
+          <td><a href="https://downloads.thebiogrid.org/Download/BioGRID/Release-Archive/BIOGRID-4.4.204/BIOGRID-ORGANISM-4.4.204.psi25.zip" target="_blank" class="extlink">BioGRID</a>- Release 4.4.204</td>
           <td>Chatr-Aryamontri et al., 2014 - <a href="http://www.ncbi.nlm.nih.gov/pubmed/25428363">PubMed: 25428363</a></td>
         </tr>
         <tr>
