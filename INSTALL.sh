@@ -5,7 +5,8 @@
 # Date: April 2019
 
 # Set version number. This is the thalemine.properties.20190419 file
-export GRADLE_OPTS="-server -Dorg.gradle.daemon=false -Xms512m -Xmx2g -XX:+UseParallelGC -XX:SoftRefLRUPolicyMSPerMB=1 -XX:MaxHeapFreeRatio=99"
+export GRADLE_OPTS="-server -Dorg.gradle.daemon=false -XX:MaxPermSize=1g -Xms2g -Xmx8g -XX:+UseParallelGC -XX:SoftRefLRUPolicyMSPerMB=1 -XX:MaxHeapFreeRatio=99"
+
 
 ## Clean
 #./gradlew clean
