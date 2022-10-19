@@ -117,7 +117,7 @@
         <tr>
           <td rowspan="2" class="leftcol"><h2><p>Gene Ontology</p></h2></td>
           <td>GO annotations from Gene Ontology</td>
-          <td><a href="http://current.geneontology.org/annotations/tair.gaf.gz" target="_blank" class="extlink">Gene Ontology</a>- Release 2021-12-15</td>
+          <td><a href="http://current.geneontology.org/annotations/tair.gaf.gz" target="_blank" class="extlink">Gene Ontology</a>- Release 2022-07-01</td>
           <td>Berardini et al., 2004 - <a href="http://www.ncbi.nlm.nih.gov/pubmed/15173566" target="_blank" class="extlink">PubMed: 15173566</a><br />
               Gene Ontology Consortium - <a href="http://www.ncbi.nlm.nih.gov/pubmed/10802651" target="_blank" class="extlink">PubMed:10802651</a></td>
         </tr>
