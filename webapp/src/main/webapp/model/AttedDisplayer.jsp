@@ -12,7 +12,7 @@
 </div>
 
 <%-- Change the link here to your displayer --%>
-<script charset="utf-8" type="text/javascript" src="js/atted-displayer-1.4.0.js"></script>
+<script charset="utf-8" type="text/javascript" src="js/atted-displayer-1.5.0.js"></script>
 
 <c:set var="object" value="${reportObject.object}"/>
 <c:set var="AGI" value="${object.primaryIdentifier}" />
@@ -55,7 +55,7 @@
        AGIcode: id,
        cutoff: 20,
        service: webapp_url + "/service",
-       atted: "https://bar.utoronto.ca/api/proxy/atted_api4"
+       atted: "https://bar.utoronto.ca/api_dev/proxy/atted_api5"
    };
    let displayer = new AttedDisplayer(opts,attedcallback,attedqueryhook);
 </script>
