@@ -55,7 +55,7 @@
        AGIcode: id,
        cutoff: 20,
        service: webapp_url + "/service",
-       atted: "https://bar.utoronto.ca/api_dev/proxy/atted_api5"
+       atted: "https://bar.utoronto.ca/api/proxy/atted_api5"
    };
    let displayer = new AttedDisplayer(opts,attedcallback,attedqueryhook);
 </script>
