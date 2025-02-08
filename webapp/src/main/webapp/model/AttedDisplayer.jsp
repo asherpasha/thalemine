@@ -12,7 +12,7 @@
 </div>
 
 <%-- Change the link here to your displayer --%>
-<script charset="utf-8" type="text/javascript" src="js/atted-displayer-1.3.0.js"></script>
+<script charset="utf-8" type="text/javascript" src="js/atted-displayer-1.4.0.js"></script>
 
 <c:set var="object" value="${reportObject.object}"/>
 <c:set var="AGI" value="${object.primaryIdentifier}" />
